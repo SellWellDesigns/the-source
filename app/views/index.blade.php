@@ -22,7 +22,7 @@
 
     <div class="container">
       <div class="row">
-        <img class="logo pull-right brand-border-right" src="{{ asset('img/logo-primary.jpg') }}" />
+        <img class="logo pull-right" src="{{ asset('img/logo-primary.jpg') }}" />
       </div>
 
       <div class="row">
@@ -34,36 +34,21 @@
 
       <p>&nbsp;</p>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+
+      <hr />
+
+      <p class="lead">
+        Welcome to The Source, a highly-anticipated artisan food market that occupies a former
+        1880‘s brick foundry building on Brighton Boulevard in Denver’s River North <abbr title="River North">(RiNo)</abbr> 
+        District. More than two years in planning, The Source has become a collective of food 
+        artisans offering visitors everything from freshly baked bread to craft cocktails, from 
+        street tacos to contemporary flower arrangements.
+      </p>
+
+      <hr />
 
       <div class="row">
-
-        <div class="col-lg-6 col-md-6">
-          <div id="source-vendors">
-            <img src="{{ asset('img/Boxcar_7.jpg') }}" />
-            <img src="{{ asset('img/CrookedStave_2.jpg') }}" />
-            <img src="{{ asset('img/Mondo_3.jpg') }}" />
-            <img src="{{ asset('img/Oak_2.jpg') }}" />
-            <img src="{{ asset('img/Mondo_3.jpg') }}" />
-            <img src="{{ asset('img/Boxcar_7.jpg') }}" />
-            <img src="{{ asset('img/CrookedStave_2.jpg') }}" />
-            <img src="{{ asset('img/Oak_2.jpg') }}" />
-            <img src="{{ asset('img/CrookedStave_2.jpg') }}" />
-            <img src="{{ asset('img/Boxcar_7.jpg') }}" />
-            <img src="{{ asset('img/Oak_2.jpg') }}" />
-            <img src="{{ asset('img/Mondo_3.jpg') }}" />
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6">
-          <p class="lead">
-            Welcome to The Source, a highly-anticipated artisan food market that occupies a former
-            1880‘s brick foundry building on Brighton Boulevard in Denver’s River North <abbr title="River North">(RiNo)</abbr> 
-            District. More than two years in planning, The Source has become a collective of food 
-            artisans offering visitors everything from freshly baked bread to craft cocktails, from 
-            street tacos to contemporary flower arrangements.
-          </p>
+        <div class="col-lg-6">
           <p>
             Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar 
             owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; 
@@ -76,6 +61,8 @@
             up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, 
             a cheese, spice, and specialty food store.
           </p>
+        </div>
+        <div class="col-lg-6">
           <p>
             The Source offers a one-stop shopping experience for the food-obsessed while also 
             providing some of Denver’s best artisans with an outlet for their crafts. The openness 
@@ -88,26 +75,30 @@
         </div>
       </div>
 
-      <section id="the-source">
-        <div class="building"></div>
-        <div class="overlay"></div>
-        <div class="caption">
-          <div class="brand-border-left">
-            <p>
-              The Source logo was developed with the idea of space and vertical integration in addition to the utilitarian first use of the
-            </p>
-            <h3>original</h3>
-            <h1>building</h1>
-          </div>
-        </div>
-      </section>
-
       <hr />
 
-      <footer>
+      <div class="row">
+        <div id="source-vendors">
+          <img src="{{ asset('img/Boxcar_7.jpg') }}" />
+          <img src="{{ asset('img/CrookedStave_2.jpg') }}" />
+          <img src="{{ asset('img/Mondo_3.jpg') }}" />
+          <img src="{{ asset('img/Oak_2.jpg') }}" />
+          <img src="{{ asset('img/Mondo_3.jpg') }}" />
+          <img src="{{ asset('img/Boxcar_7.jpg') }}" />
+          <img src="{{ asset('img/CrookedStave_2.jpg') }}" />
+          <img src="{{ asset('img/Oak_2.jpg') }}" />
+          <img src="{{ asset('img/CrookedStave_2.jpg') }}" />
+          <img src="{{ asset('img/Boxcar_7.jpg') }}" />
+          <img src="{{ asset('img/Oak_2.jpg') }}" />
+          <img src="{{ asset('img/Mondo_3.jpg') }}" />
+        </div>
+      </div>
 
-      </footer>
     </div>
+    
+    <footer id="footer" class="clearfix">
+      <img class="logo pull-right" src="{{ asset('img/logo-primary.jpg') }}" />
+    </footer>
     
   </body>
 </html>
