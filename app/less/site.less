@@ -1,77 +1,154 @@
 @import "common";
 
-body {
+@icon-font-path: "../font/";
+@import "../../public/js/bootstrap-datetimepicker/src/less/bootstrap-datetimepicker";
+
+body, html {
 	font-weight: 200;
-}
-
-.logo {
-	margin-top: 100px;
-	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000;
 }
 
 
-@brand-border: @brand3;
-.brand-border-left {
-	padding-left: 10px;
-	border-left: 30px solid @brand-border;
+
+.navbar-brand {
+	position: relative;
+
+	.logo {
+		height: 50px;
+		position: absolute;
+		top: 14px;
+		right: 0;
+	}
 }
-.brand-border-right {
-	padding-right: 10px;
-	border-right: 30px solid @brand-border;
+
+
+.full-page {
+	width: 100%;
+	height: 100%;
 }
+
+.gradient {
+	background: rgb(238,238,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(40%,rgba(255,255,255,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(238,238,238,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(238,238,238,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+table.vertical-align-table {
+	width: 100%;
+	height: 100%;
+
+	tr, td {
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+
+
+.navbar-fix {
+	margin-top: @navbar-height;
+}
+
+
+#welcome {
+	background-image: url('../img/TheSourcePMLoRez.jpg');
+	background-size: cover;
+	background-position: bottom center;
+
+	h1, h3, i {
+		color: #fff;
+	}
+}
+
+
+
+#about {
+	height: 700px;
+}
+
+#vendors {
+	height: 700px;
+}
+
 
 
 #source-vendors {
+	width: 100%;
+
 	img {
-		width: 25%;
-		margin: 0;
-		padding: 0;
-		float: left;
+		width: 20%;
 	}
 }
 
 
-#the-source {
-	position: relative;
-	background-color: @brand1;
-	height: 400px;
-
-	.building {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		right: 0;
-		bottom: 0;
-		height: 400px;
-		width: 50%;
-		background-image: url("../img/TheSourcePMLoRez-washed.jpg");
-		background-size: cover;
-		background-position: bottom right;
-	}
-	.overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		height: 400px;
-		background: fadeout(@brand1, 40%);
-	}
-	.caption {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 50%;
-		height: 400px;
-
-		.secondary-border-left {
-			margin-top: 75px;
-		}
-	}
-}
 
 #footer {
 	background: #000;
-	margin-top: -75px;
+	color: #fff;
+	padding: 100px 0;
+}
+
+
+
+
+
+
+.calendar {
+	ul {
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    clear: both;
+	    width: 100%;
+	}
+ 
+	li {
+	    display: block;
+	    float: left;
+	    width: 14.2857142857%;
+	    padding: 5px;
+	    box-sizing: border-box;
+	    border: 1px solid #ccc;
+	    margin-right: -1px;
+	    margin-bottom: -1px;
+	}
+
+	.weekdays {
+		background: @brand1;
+		color: #fff;
+	}
+
+	.days li {
+		height: 100px;
+	}
+}
+
+
+@media only screen and (max-width : 768px) {
+ 
+    .calendar .weekdays{
+        display: none;
+    }
+ 
+    .calendar li{
+        height: auto!important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .calendar li .day, .calendar li .month{
+        display: inline;
+    }
+ 
+    .calendar li.out_of_range {
+        display: none;
+    }
 }

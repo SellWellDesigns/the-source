@@ -16,7 +16,4 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('/2', function()
-{
-	return View::make('index2');
-});
+Route::resource('events', 'CalendarEventsController');

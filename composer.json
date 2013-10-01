@@ -4,10 +4,9 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.*",
+		"laravel/framework": "4.0.*",
 		"twitter/bootstrap": "v3.0.0",
-		"components/font-awesome": "3.2.*@dev",
-		"vtalbot/less": "1.*"
+		"components/font-awesome": "3.2.*@dev"
 	},
 	"autoload": {
 		"classmap": [
