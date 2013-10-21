@@ -1,8 +1,25 @@
+# Demo Site .htaccess
+#====================
+#
+#<IfModule mod_rewrite.c>
+#        Options -MultiViews
+#        RewriteEngine On
+#
+#        RewriteCond %{REQUEST_FILENAME} !-d
+#        RewriteRule ^(.+)/$ http://%{HTTP_HOST}/$1 [R=301,L]
+#
+#        RewriteCond %{REQUEST_FILENAME} !-f
+#        RewriteRule ^ /the-source/index.php [L]
+#</IfModule>
+
+# Live/Dev Site .htacess
+#=======================
+#
 <IfModule mod_rewrite.c>
     Options -MultiViews
     RewriteEngine On
 
-	RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
