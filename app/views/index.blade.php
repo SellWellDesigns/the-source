@@ -234,7 +234,7 @@
       ];
 
       var mapOptions = {
-        zoom: 15,
+        zoom: 17,
         center: theSource,
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
