@@ -17,58 +17,29 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#nav">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-
-      <div class="container">
-        <div class="navbar-header pull-right">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <img class="logo" src="{{ asset('img/logo-primary.jpg') }}" />
-          </a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li class="dropdown">
-              <a href="#vendors" class="dropdown-toggle" data-toggle="dropdown">Vendors <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Crooked Stave</a></li>
-                <li><a href="#">Oak</a></li>
-                <li><a href="#">Mondo</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#events">Events</a>
-            </li>
-            
-            <li>
-              <a href="#">
-                <i class="icon-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-google-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-
+    <nav id="nav">
+      <ul class="nav">
+        <li>
+          <a href="#about" data-scroll="true">about</a>
+        </li>
+        <li>
+          <a href="#contact" data-scroll="true">contact</a>
+        </li>
+        <li>
+          <a href="#events" data-scroll="true">events</a>
+        </li>
+        <li>
+          <a href="#tenants" data-scroll="true">tenants</a>
+        </li>
+        <li>
+          <a href="#faq" data-scroll="true">faq</a>
+        </li>
+        <li>
+          <a href="#social" data-scroll="true">social</a>
+        </li>
+      </ul>
     </nav>
 
 
@@ -77,9 +48,57 @@
 
 
 
+    <footer id="social" class="brand4-bg text-center">
+      <ul class="nav">
+        <li>
+          <a href="#" class="brand1">
+            <i class="icon-2x icon-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brand1">
+            <i class="icon-2x icon-tumblr"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brand1">
+            <i class="icon-2x icon-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brand1">
+            <i class="icon-2x icon-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
     <footer id="footer">
-      <div class="container">
-        &copy; {{ date('Y') }} The Source
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+        </div>
       </div>
     </footer>
     
