@@ -42,9 +42,10 @@ body {
 }
 #logo {
 	background-image: url('../img/logo-lg.png');
-	background-position: center center;
+	background-position: center 299px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: 841px/2.5 299px/2.5;
 	width: 100%;
 	height: 100%;
 }
@@ -69,7 +70,49 @@ body {
 
 
 #tenants {
+	// margin-bottom: -1918px + 700px;
+	// height: 700px;
+	// overflow: hidden;
 
+	h1 {
+		a {
+			color: white;
+			display: block;
+			font-size: 85px;
+			background: url(../img/header-bg-image.jpg) no-repeat;
+			background-size: cover;
+			
+			-webkit-background-clip: text;
+			-o-background-clip: text;
+			-moz-background-clip: text;
+			background-clip: text;
+
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			-o-text-fill-color: transparent;
+			text-fill-color: transparent;
+
+			background-attachment: fixed;
+
+			&:hover {
+				color: @brand3;
+				text-decoration: none;
+				text-shadow: none; 
+				cursor: pointer;
+				-webkit-text-fill-color: @brand3;
+				-moz-text-fill-color: @brand3;
+				-o-text-fill-color: @brand3;
+				text-fill-color: @brand3;
+			}
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
 }
 
 
@@ -108,3 +151,27 @@ body {
 		padding: 0;
 	}
 }
+
+
+
+
+
+
+@media (max-width: @screen-xs-max) {
+
+}
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	#logo {
+		background-size: 841px/1.5 299px/1.5;
+	}
+}
+@media (min-width: @screen-md) and (max-width: @screen-md-max) {
+	#logo {
+		background-size: 841px 299px;
+	}
+}
+@media (min-width: @screen-lg) {
+	#logo {
+		background-size: 841px 299px;
+	}
+}    

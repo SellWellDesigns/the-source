@@ -82,22 +82,22 @@
           <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
         </div>
         <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
         </div>
         <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-2.jpg') }}" />
         </div>
         <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-2.jpg') }}" />
         </div>
         <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
         </div>
         <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
+          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-2.jpg') }}" />
         </div>
         <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
+          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
         </div>
       </div>
     </footer>

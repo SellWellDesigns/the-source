@@ -9,14 +9,43 @@
 
 .toggle {
     border-bottom: 1px solid @brand4;
-    padding: 20px;
-
+    border-left: 10px solid @brand1;
+    border-right: 10px solid @brand1;
+    
     > a {
-    	text-decoration: none;
-    	display: block;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+
+        &:hover {
+            background-color: @brand3;
+        }
     }
 
-    .in {
-    	clear: both;
+    &:hover {
+        border-left-color: @brand3;
+        border-right-color: @brand3;
     }
+
+    &.in {
+    	border: 10px solid @brand3;
+
+        a:hover {
+            background-color: @brand1;
+        }
+    }
+
+    .toggle-text {
+
+    }
+
+    .toggle-open {
+        font-size: 30px;
+        line-height: .5;
+    }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }

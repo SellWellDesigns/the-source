@@ -68,7 +68,7 @@
             info@thesourcedenver.com
           </p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 hidden-xs">
           <div id="map-canvas"></div>
         </div>
       </div>
@@ -82,10 +82,12 @@
       <div id="events-accordion" class="accordion">
 
         <div class="toggle">
-          <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseOneE">
-            What is The Source?
-            <i class="icon-2x icon-plus pull-right"></i>
+
+          <a class="clearfix" data-toggle="collapse" data-parent="#events-accordion" href="#collapseOneE">
+            <span class="toggle-text pull-left">What is The Source?</span>
+            <b class="toggle-open pull-right">+</b>
           </a>
+          
           <div id="collapseOneE" class="collapse clearfix">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
@@ -95,12 +97,13 @@
               <i class="icon-2x icon-remove pull-right"></i>
             </a>
           </div>
+
         </div>
 
         <div class="toggle">
-          <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwoE">
-            How did you choose your tenants?
-            <i class="icon-2x icon-plus pull-right"></i>
+          <a class="clearfix" data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwoE">
+            <span class="toggle-text pull-left">What is The Source?</span>
+            <b class="toggle-open pull-right">+</b>
           </a>
           <div id="collapseTwoE" class="collapse clearfix">
             <p>
@@ -114,9 +117,9 @@
         </div>
 
         <div class="toggle">
-          <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseThreeE">
-            Can I rent out The Source?
-            <i class="icon-2x icon-plus pull-right"></i>
+          <a class="clearfix" data-toggle="collapse" data-parent="#events-accordion" href="#collapseThreeE">
+            <span class="toggle-text pull-left">What is The Source?</span>
+            <b class="toggle-open pull-right">+</b>
           </a>
           <div id="collapseThreeE" class="collapse clearfix">
             <p>
@@ -135,10 +138,54 @@
 
   <section id="tenants" class="page text-center brand2-bg">
     <div class="container">
-      <h1>proper pour</h1>
-      <h1>acorn</h1>
-      <h1>boxcar coffee</h1>
-      <h1>zeppelin development</h1>
+      <h1>
+        <a href="#">proper pour</a>
+      </h1>
+      <h1>
+        <a href="#">acorn</a>
+      </h1>
+      <h1>
+        <a href="#">boxcar coffee</a>
+      </h1>
+      <h1>
+        <a href="#">zeppelin development</a>
+      </h1>
+      <h1>
+        <a href="#">proper pour</a>
+      </h1>
+      <h1>
+        <a href="#">acorn</a>
+      </h1>
+      <h1>
+        <a href="#">boxcar coffee</a>
+      </h1>
+      <h1>
+        <a href="#">zeppelin development</a>
+      </h1>
+      <h1>
+        <a href="#">proper pour</a>
+      </h1>
+      <h1>
+        <a href="#">acorn</a>
+      </h1>
+      <h1>
+        <a href="#">boxcar coffee</a>
+      </h1>
+      <h1>
+        <a href="#">zeppelin development</a>
+      </h1>
+      <h1>
+        <a href="#">proper pour</a>
+      </h1>
+      <h1>
+        <a href="#">acorn</a>
+      </h1>
+      <h1>
+        <a href="#">boxcar coffee</a>
+      </h1>
+      <h1>
+        <a href="#">zeppelin development</a>
+      </h1>
     </div>
   </section>
 
@@ -149,9 +196,9 @@
       <div id="faq-accordion" class="accordion">
 
         <div class="toggle">
-          <a data-toggle="collapse" data-parent="#faq-accordion" href="#collapseOne">
-            What is The Source?
-            <i class="icon-2x icon-plus pull-right"></i>
+          <a class="clearfix" data-toggle="collapse" data-parent="#faq-accordion" href="#collapseOne">
+            <span class="toggle-text pull-left">What is The Source?</span>
+            <b class="toggle-open pull-right">+</b>
           </a>
           <div id="collapseOne" class="collapse clearfix">
             <p>
@@ -165,9 +212,9 @@
         </div>
 
         <div class="toggle">
-          <a data-toggle="collapse" data-parent="#faq-accordion" href="#collapseTwo">
-            How did you choose your tenants?
-            <i class="icon-2x icon-plus pull-right"></i>
+          <a class="clearfix" data-toggle="collapse" data-parent="#faq-accordion" href="#collapseTwo">
+            <span class="toggle-text pull-left">What is The Source?</span>
+            <b class="toggle-open pull-right">+</b>
           </a>
           <div id="collapseTwo" class="collapse clearfix">
             <p>
@@ -181,9 +228,9 @@
         </div>
 
         <div class="toggle">
-          <a data-toggle="collapse" data-parent="#faq-accordion" href="#collapseThree">
-            Can I rent out The Source?
-            <i class="icon-2x icon-plus pull-right"></i>
+          <a class="clearfix" data-toggle="collapse" data-parent="#faq-accordion" href="#collapseThree">
+            <span class="toggle-text pull-left">What is The Source?</span>
+            <b class="toggle-open pull-right">+</b>
           </a>
           <div id="collapseThree" class="collapse clearfix">
             <p>
@@ -212,9 +259,13 @@
 
   $(function(){
 
+    /**
+     * Parallax Effect
+     */
     var
       windowHeight = $(window).height(),
-      logo         = $('#logo')[0]
+      logo         = $('#logo')[0],
+      $body        = $('body')
     ;
 
     $(window).on('scroll', function()
@@ -235,20 +286,62 @@
       windowHeight = $(window).height();
     });
 
+
+
+
+
+
+    var
+      tenants             = $('#tenants'),
+      tenantsOffsetTop    = tenants.offset().top,
+      tenantsHeight       = tenants.height(),
+      tenantsOffsetBottom = tenantsOffsetTop + tenantsHeight
+    ;
+
+    tenants.css({
+      marginBottom: (tenantsHeight - 700) * -1
+    });
+
+    $(window).on('scroll', function()
+    {
+      var scrollTop = $body[0].scrollTop;
+      if( scrollTop >= tenantsOffsetTop && scrollTop < tenantsOffsetBottom )
+      {
+        tenants.addClass('fixed');
+        console.log(scrollTop - tenantsOffsetTop);
+        tenants.animate({ 'scrollTop': 100 });
+        // $body.addClass('stop-scrolling');
+      } else {
+        tenants.removeClass('fixed');        
+      }
+    });
+
+
+
+
+
+
+
+    /**
+     * Animate Scrolling
+     */
     $('[data-scroll]').on('click', function(){
         var $target = $( $(this).data('target') || $(this).attr('href') );
         if(!$target) return;
         $('html, body').animate({ 'scrollTop': $target.offset().top });
     });
 
+    /**
+     * Accordions
+     */
     $('.accordion')
       .on('show.bs.collapse', function(e){
           var toggle = $(e.target).parent();
-          $('.icon-plus', toggle).hide();
+          toggle.addClass('in');
       })
       .on('hide.bs.collapse', function(e){
           var toggle = $(e.target).parent();
-          $('.icon-plus', toggle).show();
+          toggle.removeClass('in');
       });
 
     /**
