@@ -291,30 +291,30 @@
 
 
 
-    var
-      tenants             = $('#tenants'),
-      tenantsOffsetTop    = tenants.offset().top,
-      tenantsHeight       = tenants.height(),
-      tenantsOffsetBottom = tenantsOffsetTop + tenantsHeight
-    ;
+    // var
+    //   tenants             = $('#tenants'),
+    //   tenantsOffsetTop    = tenants.offset().top,
+    //   tenantsHeight       = tenants.height(),
+    //   tenantsOffsetBottom = tenantsOffsetTop + tenantsHeight
+    // ;
 
-    tenants.css({
-      marginBottom: (tenantsHeight - 700) * -1
-    });
+    // tenants.css({
+    //   marginBottom: (tenantsHeight - 700) * -1
+    // });
 
-    $(window).on('scroll', function()
-    {
-      var scrollTop = $body[0].scrollTop;
-      if( scrollTop >= tenantsOffsetTop && scrollTop < tenantsOffsetBottom )
-      {
-        tenants.addClass('fixed');
-        console.log(scrollTop - tenantsOffsetTop);
-        tenants.animate({ 'scrollTop': 100 });
-        // $body.addClass('stop-scrolling');
-      } else {
-        tenants.removeClass('fixed');        
-      }
-    });
+    // $(window).on('scroll', function()
+    // {
+    //   var scrollTop = $body[0].scrollTop;
+    //   if( scrollTop >= tenantsOffsetTop && scrollTop < tenantsOffsetBottom )
+    //   {
+    //     tenants.addClass('fixed');
+    //     console.log(scrollTop - tenantsOffsetTop);
+    //     tenants.animate({ 'scrollTop': 100 });
+    //     // $body.addClass('stop-scrolling');
+    //   } else {
+    //     tenants.removeClass('fixed');        
+    //   }
+    // });
 
 
 
