@@ -3,7 +3,7 @@
 @section('content')
 
   <header id="header" class="text-center">
-    <img src="{{ asset('img/logo-lg.png') }}" />
+    <div id="logo"></div>
   </header>
 
   <section id="about" class="page brand1-bg">
@@ -67,29 +67,6 @@
           <p class="lead">
             info@thesourcedenver.com
           </p>
-
-          <ul class="nav">
-            <li>
-              <a href="#">
-                <i class="icon-2x icon-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-2x icon-tumblr"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-2x icon-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-2x icon-twitter"></i>
-              </a>
-            </li>
-          </ul>
         </div>
         <div class="col-lg-6">
           <div id="map-canvas"></div>
@@ -102,15 +79,21 @@
     <div class="container">
       <h1>events</h1>
 
-      <div id="events-accordion">
+      <div id="events-accordion" class="accordion">
 
         <div class="toggle">
           <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseOneE">
             What is The Source?
             <i class="icon-2x icon-plus pull-right"></i>
           </a>
-          <div id="collapseOneE" class="collapse">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseOneE" class="collapse clearfix">
+            <p>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+
+            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseOneE">
+              <i class="icon-2x icon-remove pull-right"></i>
+            </a>
           </div>
         </div>
 
@@ -119,8 +102,14 @@
             How did you choose your tenants?
             <i class="icon-2x icon-plus pull-right"></i>
           </a>
-          <div id="collapseTwoE" class="panel-collapse collapse">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseTwoE" class="collapse clearfix">
+            <p>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+
+            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwoE">
+              <i class="icon-2x icon-remove pull-right"></i>
+            </a>
           </div>
         </div>
 
@@ -129,8 +118,14 @@
             Can I rent out The Source?
             <i class="icon-2x icon-plus pull-right"></i>
           </a>
-          <div id="collapseThreeE" class="panel-collapse collapse">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseThreeE" class="collapse clearfix">
+            <p>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+
+            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseThreeE">
+              <i class="icon-2x icon-remove pull-right"></i>
+            </a>
           </div>
         </div>
 
@@ -151,15 +146,21 @@
     <div class="container">
       <h1>faq</h1>
 
-      <div id="faq-accordion">
+      <div id="faq-accordion" class="accordion">
 
         <div class="toggle">
           <a data-toggle="collapse" data-parent="#faq-accordion" href="#collapseOne">
             What is The Source?
             <i class="icon-2x icon-plus pull-right"></i>
           </a>
-          <div id="collapseOne" class="collapse">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseOne" class="collapse clearfix">
+            <p>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+
+            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseOne">
+              <i class="icon-2x icon-remove pull-right"></i>
+            </a>
           </div>
         </div>
 
@@ -168,8 +169,14 @@
             How did you choose your tenants?
             <i class="icon-2x icon-plus pull-right"></i>
           </a>
-          <div id="collapseTwo" class="panel-collapse collapse">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseTwo" class="collapse clearfix">
+            <p>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+
+            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwo">
+              <i class="icon-2x icon-remove pull-right"></i>
+            </a>
           </div>
         </div>
 
@@ -178,8 +185,14 @@
             Can I rent out The Source?
             <i class="icon-2x icon-plus pull-right"></i>
           </a>
-          <div id="collapseThree" class="panel-collapse collapse">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div id="collapseThree" class="collapse clearfix">
+            <p>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+
+            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseThree">
+              <i class="icon-2x icon-remove pull-right"></i>
+            </a>
           </div>
         </div>
 
@@ -193,12 +206,51 @@
 @section('scripts')
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <script>
+  function calcParallax(tileheight, speedratio, scrollposition) {
+    return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
+  }
+
   $(function(){
+
+    var
+      windowHeight = $(window).height(),
+      logo         = $('#logo')[0]
+    ;
+
+    $(window).on('scroll', function()
+    {
+      var
+        posY = (document.documentElement.scrollTop)
+          ? document.documentElement.scrollTop
+          : window.pageYOffset,
+        bottomWindowPos = posY + $(window).height()
+      ;
+      
+      var logoScroll = calcParallax(299, 2, posY);
+      console.log( 299 + ((posY / 2) % 299) );
+      logo.style.backgroundPosition =  "center " + logoScroll + "px"; 
+    });
+
+    $(window).on('resize', function()
+    {
+      windowHeight = $(window).height();
+    });
+
     $('[data-scroll]').on('click', function(){
         var $target = $( $(this).data('target') || $(this).attr('href') );
         if(!$target) return;
         $('html, body').animate({ 'scrollTop': $target.offset().top });
     });
+
+    $('.accordion')
+      .on('show.bs.collapse', function(e){
+          var toggle = $(e.target).parent();
+          $('.icon-plus', toggle).hide();
+      })
+      .on('hide.bs.collapse', function(e){
+          var toggle = $(e.target).parent();
+          $('.icon-plus', toggle).show();
+      });
 
     /**
      * Google Map
@@ -234,7 +286,7 @@
       ];
 
       var mapOptions = {
-        zoom: 17,
+        zoom: 15,
         center: theSource,
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]

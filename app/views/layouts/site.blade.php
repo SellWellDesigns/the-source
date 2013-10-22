@@ -17,7 +17,7 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-spy="scroll" data-target="#nav">
+  <body data-spy="scroll" data-target="#nav" data-offset="200">
 
     <nav id="nav">
       <ul class="nav">
