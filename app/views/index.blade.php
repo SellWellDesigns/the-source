@@ -82,55 +82,47 @@
       <div id="events-accordion" class="accordion">
 
         <div class="toggle">
-
-          <a class="clearfix" data-toggle="collapse" data-parent="#events-accordion" href="#collapseOneE">
-            <span class="toggle-text pull-left">What is The Source?</span>
-            <b class="toggle-open pull-right">+</b>
+          <a class="toggle-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1e">
+            <span class="toggle-text">What is The Source?</span>
           </a>
-          
-          <div id="collapseOneE" class="collapse clearfix">
+          <div id="c1e" class="toggle-content collapse">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </p>
-
-            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseOneE">
-              <i class="icon-2x icon-remove pull-right"></i>
-            </a>
           </div>
-
+          <a data-toggle="collapse" data-parent="#events-accordion" href="#c1e">
+            <b class="toggler pull-right">+</b>
+          </a>
         </div>
 
         <div class="toggle">
-          <a class="clearfix" data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwoE">
-            <span class="toggle-text pull-left">What is The Source?</span>
-            <b class="toggle-open pull-right">+</b>
+          <a class="toggle-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2e">
+            <span class="toggle-text">What is The Source?</span>
           </a>
-          <div id="collapseTwoE" class="collapse clearfix">
+          <div id="c2e" class="toggle-content collapse">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </p>
-
-            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwoE">
-              <i class="icon-2x icon-remove pull-right"></i>
-            </a>
           </div>
+          <a data-toggle="collapse" data-parent="#events-accordion" href="#c2e">
+            <b class="toggler pull-right">+</b>
+          </a>
         </div>
 
         <div class="toggle">
-          <a class="clearfix" data-toggle="collapse" data-parent="#events-accordion" href="#collapseThreeE">
-            <span class="toggle-text pull-left">What is The Source?</span>
-            <b class="toggle-open pull-right">+</b>
+          <a class="toggle-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3e">
+            <span class="toggle-text">What is The Source?</span>
           </a>
-          <div id="collapseThreeE" class="collapse clearfix">
+          <div id="c3e" class="toggle-content collapse">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </p>
-
-            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseThreeE">
-              <i class="icon-2x icon-remove pull-right"></i>
-            </a>
           </div>
+          <a data-toggle="collapse" data-parent="#events-accordion" href="#c3e">
+            <b class="toggler pull-right">+</b>
+          </a>
         </div>
+        
 
       </div>
     </div>
@@ -196,51 +188,45 @@
       <div id="faq-accordion" class="accordion">
 
         <div class="toggle">
-          <a class="clearfix" data-toggle="collapse" data-parent="#faq-accordion" href="#collapseOne">
-            <span class="toggle-text pull-left">What is The Source?</span>
-            <b class="toggle-open pull-right">+</b>
+          <a class="toggle-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1f">
+            <span class="toggle-text">What is The Source?</span>
           </a>
-          <div id="collapseOne" class="collapse clearfix">
+          <div id="c1f" class="toggle-content collapse">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </p>
-
-            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseOne">
-              <i class="icon-2x icon-remove pull-right"></i>
-            </a>
           </div>
+          <a data-toggle="collapse" data-parent="#events-accordion" href="#c1f">
+            <b class="toggler pull-right">+</b>
+          </a>
         </div>
 
         <div class="toggle">
-          <a class="clearfix" data-toggle="collapse" data-parent="#faq-accordion" href="#collapseTwo">
-            <span class="toggle-text pull-left">What is The Source?</span>
-            <b class="toggle-open pull-right">+</b>
+          <a class="toggle-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <span class="toggle-text">What is The Source?</span>
           </a>
-          <div id="collapseTwo" class="collapse clearfix">
+          <div id="c2f" class="toggle-content collapse">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </p>
-
-            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseTwo">
-              <i class="icon-2x icon-remove pull-right"></i>
-            </a>
           </div>
+          <a data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <b class="toggler pull-right">+</b>
+          </a>
         </div>
 
         <div class="toggle">
-          <a class="clearfix" data-toggle="collapse" data-parent="#faq-accordion" href="#collapseThree">
-            <span class="toggle-text pull-left">What is The Source?</span>
-            <b class="toggle-open pull-right">+</b>
+          <a class="toggle-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3f">
+            <span class="toggle-text">What is The Source?</span>
           </a>
-          <div id="collapseThree" class="collapse clearfix">
+          <div id="c3f" class="toggle-content collapse">
             <p>
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </p>
-
-            <a data-toggle="collapse" data-parent="#events-accordion" href="#collapseThree">
-              <i class="icon-2x icon-remove pull-right"></i>
-            </a>
           </div>
+          <a data-toggle="collapse" data-parent="#events-accordion" href="#c3f">
+            <b class="toggler pull-right">+</b>
+          </a>
         </div>
 
       </div>

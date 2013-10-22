@@ -8,11 +8,13 @@
 }
 
 .toggle {
+    position: relative;
     border-bottom: 1px solid @brand4;
     border-left: 10px solid @brand1;
     border-right: 10px solid @brand1;
-    
-    > a {
+
+
+    .toggle-heading {
         text-decoration: none;
         display: block;
         padding: 20px;
@@ -22,31 +24,57 @@
         }
     }
 
-    &:hover {
-        border-left-color: @brand3;
-        border-right-color: @brand3;
+    .toggle-content {
+        padding: 0 20px 40px;
+    }
+
+    .toggler {
+        position: absolute;
+        bottom: 13px;
+        right: 20px;
+        font-size: 30px;
+        font-weight: 200;
+        .transition(.5s all linear);
     }
 
     &.in {
-    	border: 10px solid @brand3;
+        border: 10px solid @brand3;
 
         a:hover {
             background-color: @brand1;
         }
 
-        .toggle-open {
-            display: none;
+        .toggler {
+            .rotate(45deg);
         }
     }
 
-    .toggle-text {
 
-    }
+    // &:hover {
+    //     border-left-color: @brand3;
+    //     border-right-color: @brand3;
+    // }
 
-    .toggle-open {
-        font-size: 30px;
-        line-height: .5;
-    }
+    // &.in {
+    // 	border: 10px solid @brand3;
+
+    //     a:hover {
+    //         background-color: @brand1;
+    //     }
+
+    //     .toggle-open {
+    //         display: none;
+    //     }
+    // }
+
+    // .toggle-text {
+
+    // }
+
+    // .toggle-open {
+    //     font-size: 30px;
+    //     line-height: .5;
+    // }
 }
 
 .stop-scrolling {
