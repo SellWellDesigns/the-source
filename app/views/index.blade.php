@@ -53,8 +53,9 @@
 
       <div class="row">
         <div class="col-lg-6">
+          <h3>hours</h3>
+
           <p class="lead">
-            hours<br />
             Monday - Friday 8:00am - 11:00pm<br />
             Saturday - Sunday 9:00am - 12:00am
           </p>
