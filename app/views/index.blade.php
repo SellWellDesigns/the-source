@@ -223,11 +223,10 @@
         posY = (document.documentElement.scrollTop)
           ? document.documentElement.scrollTop
           : window.pageYOffset,
-        bottomWindowPos = posY + $(window).height()
+        bottomWindowPos = posY + windowHeight
       ;
       
-      var logoScroll = calcParallax(299, 2, posY);
-      console.log( 299 + ((posY / 2) % 299) );
+      var logoScroll = calcParallax(299, 8, posY);
       logo.style.backgroundPosition =  "center " + logoScroll + "px"; 
     });
 
