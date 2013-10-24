@@ -384,7 +384,7 @@
 
       map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
-      var image = '/img/the-source-map-icon.png';
+      var image = '{{ asset("img/the-source-map-icon.png") }}';
       var myLatLng = theSource;
       var beachMarker = new google.maps.Marker({
           position: myLatLng,
