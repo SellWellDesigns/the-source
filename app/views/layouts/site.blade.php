@@ -16,10 +16,48 @@
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('icons/Source_favicon_144.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('icons/Source_favicon_114.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('icons/Source_favicon_72.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('icons/Source_favicon_57.png') }}">
+    <link rel="shortcut icon" href="{{ asset('icons/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('icons/Source_favicon_32.png') }}">
   </head>
   <body data-spy="scroll" data-target="#nav" data-offset="200">
 
-    <nav id="nav">
+
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            The Source
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#about" data-scroll="true">about</a>
+          </li>
+          <li>
+            <a href="#contact" data-scroll="true">contact</a>
+          </li>
+          <li>
+            <a href="#events" data-scroll="true">events</a>
+          </li>
+          <li>
+            <a href="#tenants" data-scroll="true">tenants</a>
+          </li>
+          <li>
+            <a href="#faq" data-scroll="true">faq</a>
+          </li>
+          <li>
+            <a href="#social" data-scroll="true">social</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {{--<nav id="nav">
       <ul class="nav">
         <li>
           <a href="#about" data-scroll="true">about</a>
@@ -40,7 +78,7 @@
           <a href="#social" data-scroll="true">social</a>
         </li>
       </ul>
-    </nav>
+    </nav>--}}
 
 
     
