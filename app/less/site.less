@@ -2,7 +2,6 @@
 
 html, body {
 	position: relative;
-	height: 100%;
 	width: 100%;
 }
 
@@ -16,15 +15,32 @@ body {
 
 
 
+h1 {
+	font-size: 100px;
+}
+
+
+
 #nav {
-	position: fixed;
-	top: 40%;
+	top: 0;
 	right: 0;
-	z-index: 999999;
+	left: 0;
+	width: 100%;
+	
+	&.affix-top {
+		position: absolute;
+		top: 930px - @navbar-height;
+		margin-bottom: 0;
+	}
+
+	&.affix {
+		
+	}
 	
 	a {
-		font-family: Arial, sans-serif;
-		font-weight: 800;
+		font-family: @font-family-sans-serif;
+		font-weight: 100;
+		font-size: 24px;
 	}
 
 	.active {
@@ -70,8 +86,8 @@ body {
 
 
 #tenants {
-	height: 700px;
-	overflow: scroll;
+	// height: 700px;
+	// overflow: hidden;
 
 	h1 {
 		a {
@@ -110,13 +126,37 @@ body {
 
 
 #faq {
-	
+	&.affix-top {
+		position: relative;
+		margin-top: -1293px;
+		z-index: 999999;
+	}
+
+	&.affix {
+		position: fixed;
+		top: 700px;
+		margin-top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&.affix-bottom {
+		position: absolute;
+		top: 700px;
+		left: 0;
+		right: 0;
+		z-index: 999999;
+	}
+
 }
 
 
 
 #social {
 	padding: 15px 0;
+	border-top: 10px solid @brand3;
+	border-bottom: 10px solid @brand3;
+	margin-top: 700px;
 
 	.nav {
 		display: inline-block;

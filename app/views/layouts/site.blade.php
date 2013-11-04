@@ -27,13 +27,11 @@
   <body data-spy="scroll" data-target="#nav" data-offset="200">
 
 
-    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    @yield('header')
+
+
+    <nav id="nav" class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="855">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            The Source
-          </a>
-        </div>
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="#about" data-scroll="true">about</a>
@@ -56,29 +54,6 @@
         </ul>
       </div>
     </nav>
-
-    {{--<nav id="nav">
-      <ul class="nav">
-        <li>
-          <a href="#about" data-scroll="true">about</a>
-        </li>
-        <li>
-          <a href="#contact" data-scroll="true">contact</a>
-        </li>
-        <li>
-          <a href="#events" data-scroll="true">events</a>
-        </li>
-        <li>
-          <a href="#tenants" data-scroll="true">tenants</a>
-        </li>
-        <li>
-          <a href="#faq" data-scroll="true">faq</a>
-        </li>
-        <li>
-          <a href="#social" data-scroll="true">social</a>
-        </li>
-      </ul>
-    </nav>--}}
 
 
     
