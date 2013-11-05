@@ -107,105 +107,131 @@
     </div>
   </section>
 
-  <section id="tenants" class="page text-center brand2-bg">
-    <div class="container">
-      <h1>
-        <a href="#" data-toggle="tenant-page">proper pour</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">acorn</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">boxcar coffee</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">zeppelin development</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">proper pour</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">acorn</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">boxcar coffee</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">zeppelin development</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">proper pour</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">acorn</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">boxcar coffee</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">zeppelin development</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">proper pour</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">acorn</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">boxcar coffee</a>
-      </h1>
-      <h1>
-        <a href="#" data-toggle="tenant-page">zeppelin development</a>
-      </h1>
-    </div>
-  </section>
+  <div id="pageFold">
 
-  <section id="faq" class="page brand1-bg" data-spy="affix" data-offset-top="2992" data-offset-bottom="861">
-    <div class="container">
-      <h1>faq</h1>
-
-      <div id="faq-accordion" class="accordion">
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1f">
-            What is The Source?
-            <b class="toggler">+</b>
-          </a>
-          <div id="c1f" class="accordion-content collapse">
-            <p>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
-            What is The Source?
-            <b class="toggler">+</b>
-          </a>
-          <div id="c2f" class="accordion-content collapse">
-            <p>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3f">
-            What is The Source?
-            <b class="toggler">+</b>
-          </a>
-          <div id="c3f" class="accordion-content collapse">
-            <p>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </p>
-          </div>
-        </div>
-
+    <section id="tenants" class="page text-center brand2-bg">
+      <div class="container">
+        <h1>
+          <a href="#tenant-properPour" data-toggle="tenant-page">proper pour</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">acorn</a>
+        </h1>
+        <h1>
+          <a href="#tenant-boxcar" data-toggle="tenant-page">boxcar coffee</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">zeppelin development</a>
+        </h1>
+        <h1>
+          <a href="#tenant-properPour" data-toggle="tenant-page">proper pour</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">acorn</a>
+        </h1>
+        <h1>
+          <a href="#tenant-boxcar" data-toggle="tenant-page">boxcar coffee</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">zeppelin development</a>
+        </h1>
+        <h1>
+          <a href="#tenant-properPour" data-toggle="tenant-page">proper pour</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">acorn</a>
+        </h1>
+        <h1>
+          <a href="#tenant-boxcar" data-toggle="tenant-page">boxcar coffee</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">zeppelin development</a>
+        </h1>
+        <h1>
+          <a href="#tenant-properPour" data-toggle="tenant-page">proper pour</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">acorn</a>
+        </h1>
+        <h1>
+          <a href="#tenant-boxcar" data-toggle="tenant-page">boxcar coffee</a>
+        </h1>
+        <h1>
+          <a href="#" data-toggle="tenant-page">zeppelin development</a>
+        </h1>
       </div>
-    </div>
-  </section>
+      
+      <div id="tenant-boxcar" class="tenant-sub-page">
+        <div class="row full-height relative">
+          <div class="col-lg-6 full-height relative">
+            <a class="tenant-back-button" href="#tenants" data-toggle="tenant-page-off" data-scroll="true">
+              <i class="icon-chevron-sign-left"></i>
+            </a>
+            <div class="well">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+          <div class="col-lg-6 full-height relative">
+            <h1>boxcar coffee</h1>
+          </div>
+        </div>
+      </div>
 
+    </section>
+    
+
+    <section id="faq" class="page brand1-bg">
+      <div class="container">
+        <h1>faq</h1>
+
+        <div id="faq-accordion" class="accordion">
+
+          <div class="source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1f">
+              What is The Source?
+              <b class="toggler">+</b>
+            </a>
+            <div id="c1f" class="accordion-content collapse">
+              <p>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+
+          <div class="source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+              What is The Source?
+              <b class="toggler">+</b>
+            </a>
+            <div id="c2f" class="accordion-content collapse">
+              <p>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+
+          <div class="source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3f">
+              What is The Source?
+              <b class="toggler">+</b>
+            </a>
+            <div id="c3f" class="accordion-content collapse">
+              <p>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
 @stop
 
 
@@ -249,19 +275,71 @@
 
 
 
-    var tenantsSection = $('#tenants');
+
+    $('#faq').affix({
+      offset: {
+        top: function(){
+          return ( this.top = ($('#pageFold').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
+        },
+        bottom: function () {
+          return (this.bottom = $('#footer').outerHeight(true) + 100)
+        }
+      }
+    });
+
+
+
     $('[data-toggle="tenant-page"]').on('click', function(e){
       e.preventDefault();
 
-      tenantsSection
-        .scrollTop(0)
-        .css({
-          height: '1918px'
-        })
-        .html('<div class="container"><h1>some stuff</h1></div>');
+      var
+        self    = $(this),
+        target  = self.attr('href'),
+        $target = $(target)
+      ;
+
+      $('html, body').scrollTop( $('#tenants').offset().top - 77 );
+      $target.addClass('active');
+      $('#tenants').css({
+        height: '1400px',
+        overflow: 'hidden'
+      });
+      $('#faq').addClass('affix-bottom-important');
+      $(window).trigger('scroll');
 
       return false;
     });
+
+    $('[data-toggle="tenant-page-off"]').on('click', function(e){
+      $('.tenant-sub-page', '#tenants').removeClass('active');
+      $('#faq').removeClass('affix-bottom-important affix affix-bottom');
+      $('#tenants').removeAttr('style');
+      $(window).trigger('scroll');
+    });
+
+    // $('[data-toggle="tenant-page"]').on('click', function(e){
+    //   e.preventDefault();
+
+    //   var
+    //     self    = $(this),
+    //     target  = self.attr('href'),
+    //     $target = $(target)
+    //   ;
+
+    //   $target.addClass('active');
+    //   // $('html, body').scrollTop( $('#tenants').offset().top - 77 );
+    //   $('.container', '#tenants').hide();
+    //   // $('#faq').addClass('affix-bottom-important');
+    //   // $(window).trigger('scroll');
+
+    //   return false;
+    // });
+
+    // $('[data-toggle="tenant-page-off"]').on('click', function(e){
+    //   $('.tenant-sub-page', '#tenants').removeClass('active');
+    //   // $('#faq').removeClass('affix-bottom-important');
+    //   $('.container', '#tenants').show();
+    // });
 
 
 
@@ -275,7 +353,7 @@
     $('[data-scroll]').on('click', function(){
         var $target = $( $(this).data('target') || $(this).attr('href') );
         if(!$target) return;
-        $('html, body').animate({ 'scrollTop': $target.offset().top });
+        $('html, body').animate({ 'scrollTop': $target.offset().top - 75 });
     });
 
     /**

@@ -84,10 +84,15 @@ h1 {
 }
 
 
+#pageFold {
+	position: relative;
+	// padding-bottom: 700px;
+}
+
 
 #tenants {
-	// height: 700px;
-	// overflow: hidden;
+	padding: 0 0 700px 0;
+	min-height: 700px;
 
 	h1 {
 		a {
@@ -121,20 +126,71 @@ h1 {
 			}
 		}
 	}
+
+}
+
+.tenant-sub-page {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	background-color: @brand2;
+	height: 700px;
+	width: 100%;
+	padding: 0 0 700px 0;
+	.transition(.5s all linear);
+
+	h1 {
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
+		color: @brand1;
+	}
+
+	.full-height {
+		height: 700px;
+	}
+
+	.well {
+		border: 10px solid @brand3;
+		background-color: fadeout(@brand1, 40%);
+		position: absolute;
+		bottom: 50px;
+		left: 50px;
+	}
+
+	&.active {
+		left: 0;
+	}
 }
 
 
+.tenant-back-button {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	font-size: 50px;
+	color: @brand1;
+}
+
+#tenant-boxcar {
+	background-image: url('../img/Boxcar_4.jpg');
+	background-size: cover;
+}
+
 
 #faq {
+	padding: 0;
+
 	&.affix-top {
-		position: relative;
-		margin-top: -1293px;
-		z-index: 999999;
+		position: absolute;
+		top: 700px;
+		left: 0;
+		right: 0;
 	}
 
 	&.affix {
 		position: fixed;
-		top: 700px;
+		top: 777px;
 		margin-top: 0;
 		left: 0;
 		right: 0;
@@ -142,10 +198,16 @@ h1 {
 
 	&.affix-bottom {
 		position: absolute;
-		top: 700px;
+		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: 999999;
+	}
+
+	&.affix-bottom-important {
+		position: absolute !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
 	}
 
 }
@@ -156,7 +218,6 @@ h1 {
 	padding: 15px 0;
 	border-top: 10px solid @brand3;
 	border-bottom: 10px solid @brand3;
-	margin-top: 700px;
 
 	.nav {
 		display: inline-block;

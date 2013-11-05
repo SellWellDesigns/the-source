@@ -43,7 +43,7 @@
             <a href="#events" data-scroll="true">events</a>
           </li>
           <li>
-            <a href="#tenants" data-scroll="true">tenants</a>
+            <a href="#tenants" data-scroll="true" data-toggle="tenant-page-off">tenants</a>
           </li>
           <li>
             <a href="#faq" data-scroll="true">faq</a>
