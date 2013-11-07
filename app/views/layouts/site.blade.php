@@ -51,6 +51,7 @@
           <li>
             <a href="#social" data-scroll="true">social</a>
           </li>
+          <li id="active-slider"></li>
         </ul>
       </div>
     </nav>

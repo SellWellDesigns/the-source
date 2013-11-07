@@ -361,6 +361,18 @@
         $('html, body').animate({ 'scrollTop': $target.offset().top - 75 });
     });
 
+    $('[data-spy="scroll"]').on('activate.bs.scrollspy', function(){
+      var
+        self   = $(this),
+        target = $( self.data('target') ),
+        slider = $('#active-slider')
+      ;
+      
+      slider.stop().animate({
+        left: $('.active', target).position().left
+      })
+    });
+
     /**
      * Accordions
      */
