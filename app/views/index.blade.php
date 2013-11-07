@@ -50,9 +50,14 @@
             Denver, CO 80216
           </p>
 
-          <p class="lead">
-            info@thesourcedenver.com
+          <p class="lead">(720) 443-1135</p>
+
+          <p>
+            <a class="btn btn-info" href="mailto:info@thesourcedenver.com">
+              Contact
+            </a>
           </p>
+
         </div>
         <div class="col-lg-6 hidden-xs">
           <div id="map-canvas"></div>
