@@ -19,6 +19,18 @@ Route::get('/', array(
     }
 ));
 
+Route::group(
+    array(
+        'prefix' => 'admin'
+    ), function(){
+
+        Route::get('/', function(){
+            return View::make('admin');
+        });
+
+    }
+);
+
 // Route::get('about', array(
 //     'as' => 'about',
 //     function()
