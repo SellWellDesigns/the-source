@@ -15,7 +15,12 @@ Route::get('/', array(
     'as' => 'home',
     function()
     {
-        return View::make('index');
+        $photos = Cache::remember('photos', 30, function(){
+            $photos = file_get_contents('https://api.instagram.com/v1/tags/thesourcedenver/media/recent?client_id=f8968ab4a82445b5b01e990c20d3fa53');
+            return json_decode($photos);
+        });
+
+        return View::make('index', compact('photos'));
     }
 ));
 

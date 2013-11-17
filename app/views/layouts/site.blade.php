@@ -89,7 +89,15 @@
 
     <footer id="footer">
       <div class="row">
-        <div class="col-lg-3">
+        
+        @for($i=0; $i<8; $i++)
+          <div class="col-lg-3">
+            <img class="img-responsive" src="{{ $photos->data[$i]->images->standard_resolution->url }}" />
+          </div>
+        @endfor
+
+
+        {{--<div class="col-lg-3">
           <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
         </div>
         <div class="col-lg-3">
@@ -112,7 +120,7 @@
         </div>
         <div class="col-lg-3">
           <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
-        </div>
+        </div>--}}
       </div>
     </footer>
     
