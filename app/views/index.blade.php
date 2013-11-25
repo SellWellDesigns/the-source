@@ -74,36 +74,49 @@
 
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1e">
-            What is The Source?
+            <span class="date">Saturday November 30th</span>
+            Small Business Saturday
             <b class="toggler">+</b>
           </a>
           <div id="c1e" class="accordion-content collapse">
+            <h4>The Source</h4>
             <p>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Forget the Black Friday rush and do your holiday shopping at The Source. Stop by SVPER ORDINARY gallery to pick up everything from art, to jewelry and one-of-a-kinda house wares Open from 11 am - 8 pm daily.
             </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2e">
-            What is The Source?
-            <b class="toggler">+</b>
-          </a>
-          <div id="c2e" class="accordion-content collapse">
             <p>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              If Drinks are more what you are what you are looking for check out Proper Pour for a expertly curated collection of beer, wine and spirits from around the world. Open 10 am daily except Monday when they open at 5 pm
             </p>
           </div>
         </div>
 
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3e">
-            What is The Source?
+            <span class="date">Sunday December 8th</span>
+            Guest Bartender Sunday
             <b class="toggler">+</b>
           </a>
           <div id="c3e" class="accordion-content collapse">
             <p>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Come out each and every sunday to catch drinks from some of Colorado's best bartenders and Caprock. Starting at 5:00 pm and running til close we will have drink specials each and every week. 
+            </p>
+          </div>
+        </div>
+        
+        <div class="source-accordion">
+          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2e">
+            <span class="date">Wednesday December 18th</span>
+            Choreography and Cocktails
+            <b class="toggler">+</b>
+          </a>
+          <div id="c2e" class="accordion-content collapse">
+            <h4>Caprock Farm Bar</h4>
+            <p>
+              AN INVITATION TO A SHOWING PRESENTATION BY INTERNATIONAL CHOREOGRAPHER ROBERT SHER-MACHHERNDL.  EXPERIENCE WORLDCLASS PERFORMANCE AT THE SOURCE, A HIP REPURPOSED FOUNDRY IN DENVER.
+            </p>
+            <p>
+              AWARD-WINNING EUROPEAN DANCERS SANDRINE CASSINI, FORMERLY OF PARIS OPERA BALLET,  
+              MONTE-CARLO BALLET AND ROBERT SHER-MACHHERNDL CREATE AN EVENING OF 
+              EUROPEAN SOPHISTICATION. 
             </p>
           </div>
         </div>
@@ -161,13 +174,13 @@
               <p>Acorn is the sister restaurant to Boulder’s OAK at Fourteenth. The rustic yet refined eatery will serve chef Steven Redzikowski’s eclectic New American cooking in an approachable format at The Source. Much like OAK, at the core of Acorn’s dishes will be the oak-fired oven and grill. Complimenting a seasonal menu created with a commitment to locally-sourced ingredients will be Acorn’s elevated cocktail program and small-batch beer and wine list. In addition to the main floor dining room, guests can take a seat at the 15-seat bar opposite the open kitchen or dine in the 30-seat mezzanine space which overlooks the kitchen and chef's counter and offers spectacular views of the mountains. Cement and graffiti accents and Emeco seating made from recycled Coca Cola bottles, give the space an urban, eclectic feel, while the marble tabletops, leather banquettes and well-appointed lighting provide an elegant counterpoint.</p>
               
               <p>
-                <a href="http://www.denveracorn.com/" title="http://www.denveracorn.com/">
+                <a class="btn btn-lg" href="http://www.denveracorn.com/" title="http://www.denveracorn.com/">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/denveracorn">
+                <a class="btn btn-lg" href="https://www.facebook.com/denveracorn">
                   <i class="icon-facebook"></i>
                 </a>
-                <a href="https://twitter.com/acorn_Denver">
+                <a class="btn btn-lg" href="https://twitter.com/acorn_Denver">
                   <i class="icon-twitter"></i>
                 </a>
               </p>
@@ -191,13 +204,13 @@
               Boxcar coffee is roasted in small batches using a vintage roaster that was built in Germany in 1929. For some of the specialty coffee drinks, baristas boil ground beans long enough to extract exact flavor, then clarify with ice cubes and strain into mugs— this cowboy coffee method of preparation improves temperature control, counteracts high elevation, and makes for a perfect cup of java.</p>
 
               <p>
-                <a href="http://boxcarcoffeeroasters.com" title="http://boxcarcoffeeroasters.com">
+                <a class="btn btn-lg" href="http://boxcarcoffeeroasters.com" title="http://boxcarcoffeeroasters.com">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/boxcarcoffee">
+                <a class="btn btn-lg" href="https://www.facebook.com/boxcarcoffee">
                   <i class="icon-facebook"></i>
                 </a>
-                <a href="https://twitter.com/boxcarcoffee">
+                <a class="btn btn-lg" href="https://twitter.com/boxcarcoffee">
                   <i class="icon-twitter"></i>
                 </a>
               </p>
@@ -220,13 +233,13 @@
               <p>The new Comida location in The Source is a bigger version of its Longmont sister with a large patio and a mezzanine for group gatherings. Chef Martin Campos will serve Comida’s staple dishes while experimenting with local ingredients for specials. A well-executed dessert menu by an in-house pastry chef features a rotating arsenal of cookies and ice creams. The bar pours a well-curated selection of wine and beer, and offers a tequila and whiskey-dominant spirits list.</p>
 
               <p>
-                <a href="http://www.eatcomida.com" title="http://www.eatcomida.com">
+                <a class="btn btn-lg" href="http://www.eatcomida.com" title="http://www.eatcomida.com">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/eatcomida/info">
+                <a class="btn btn-lg" href="https://www.facebook.com/eatcomida/info">
                   <i class="icon-facebook"></i>
                 </a>
-                <a href="https://twitter.com/eatcomida">
+                <a class="btn btn-lg" href="https://twitter.com/eatcomida">
                   <i class="icon-twitter"></i>
                 </a>
               </p> 
@@ -249,10 +262,10 @@
               <p>In addition to craft cocktails, visitors at the Farm Bar can purchase full bottles of Peak Sprits’ products, including peach and pear eau de vie, CapRock gin (distilled from apples), vodka, and grappa (distilled from their estate grapes). Peak Spirits are all distilled with local fruit and cut with untreated natural spring water.</p>
 
               <p>
-                <a href="http://peakspirits.com/" title="http://peakspirits.com/">
+                <a class="btn btn-lg" href="http://peakspirits.com/" title="http://peakspirits.com/">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/CapRockFarmBar">
+                <a class="btn btn-lg" href="https://www.facebook.com/CapRockFarmBar">
                   <i class="icon-facebook"></i>
                 </a>
               </p> 
@@ -274,10 +287,10 @@
               <p>Babette’s Artisan Breads is a traditional French bakery created by artisan baker Steve Scott. In addition to crafting and selling a variety of healthful breads, brioche, and croissants baked with organic grains, Scott, a natural teacher, plans to hire staff who seek baking apprenticeships. He’s passionate about passing on traditional French techniques to the next generation of bakers.</p>
 
               <p>
-                <a href="http://babettebread.com/" title="http://babettebread.com/">
+                <a class="btn btn-lg" href="http://babettebread.com/" title="http://babettebread.com/">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/babettesartisanbreads">
+                <a class="btn btn-lg" href="https://www.facebook.com/babettesartisanbreads">
                   <i class="icon-facebook"></i>
                 </a>
               </p> 
@@ -300,7 +313,7 @@
               <p>MeatHead will source its ethically and humanely raised and processed meats from suppliers like Four Sisters Farm and Tender Belly.</p>
 
               <p>
-                <a href="https://www.facebook.com/meatheadsource">
+                <a class="btn btn-lg" href="https://www.facebook.com/meatheadsource">
                   <i class="icon-facebook"></i>
                 </a>
               </p> 
@@ -323,10 +336,10 @@
               <p>The utilitarian aesthetic of the store reminds shoppers of the humble produce retailers of the early 20th century. The Source’s urban feel combined with the freshness of Americanum’s products represents this vendor’s commitment to creating connections between urban and rural agriculture.</p>
 
               <p>
-                <a href="http://americanumprovisions.com" title="http://americanumprovisions.com">
+                <a class="btn btn-lg" href="http://americanumprovisions.com" title="http://americanumprovisions.com">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/AmericanumProvisions">
+                <a class="btn btn-lg" href="https://www.facebook.com/AmericanumProvisions">
                   <i class="icon-facebook"></i>
                 </a>
               </p> 
@@ -348,10 +361,10 @@
               <p>Beet & Yarrow is a floral shop dedicated to the sustainable sourcing of floral products— using seasonal materials, ethically and environmentally grown and farmed flowers, and foraging— without sacrificing design.</p>
 
               <p>
-                <a href="http://www.beetandyarrow.com/" title="http://www.beetandyarrow.com/">
+                <a class="btn btn-lg" href="http://www.beetandyarrow.com/" title="http://www.beetandyarrow.com/">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/BeetandYarrow">
+                <a class="btn btn-lg" href="https://www.facebook.com/BeetandYarrow">
                   <i class="icon-facebook"></i>
                 </a>
               </p> 
@@ -373,10 +386,10 @@
               <p>Mondo Market is a cheese and spice shop that will be both a fulfillment center and a retail outlet for MondoFood.com, a website dedicated to bringing hard-to-find ingredients primarily available to chefs to the everyday consumer. The website offers an extensive selection of specialty salts, oils, vinegars, artisan cheeses and dry cured meats, spices, meat and seafood, pantry items, confections and many gourmet and gastronomical retail items. Mondo Market in The Source will offer an array of both local and imported items and serve freshly made deli sandwiches.</p>
 
               <p>
-                <a href="http://www.mondofood.com" title="http://www.mondofood.com">
+                <a class="btn btn-lg" href="http://www.mondofood.com" title="http://www.mondofood.com">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/pages/MondoFoodcom">
+                <a class="btn btn-lg" href="https://www.facebook.com/pages/MondoFoodcom">
                   <i class="icon-facebook"></i>
                 </a>
               </p>
@@ -398,10 +411,10 @@
               <p>Proper Pour is a specialty bottle shop that features small-batch spirits, independently-produced wines, and a curated selection of craft beer. Proper Pour is much more than just a liquor store, also offering carefully selected glassware, bar tools, cocktail books, and other items like bitters and aperitifs. Proper Pour is designing DIY cocktail kits that include all of the makings for individual drinks. The shop will highlight local distilleries and wineries, and sell many imported bottles as well.</p>
 
               <p>
-                <a href="http://www.theproperpour.com/" title="http://www.theproperpour.com/">
+                <a class="btn btn-lg" href="http://www.theproperpour.com/" title="http://www.theproperpour.com/">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/properpour">
+                <a class="btn btn-lg" href="https://www.facebook.com/properpour">
                   <i class="icon-facebook"></i>
                 </a>
               </p>
@@ -424,10 +437,10 @@
               <p>In the new taproom, Crooked Stave’s followers will be able to enjoy signature beers, like the dry-hopped barrel-aged saison Vielle and the Belgian-inspired white beer St. Bretta, as well as a menu of ever-changing taps.</p>
 
               <p>
-                <a href="http://www.crookedstave.com" title="http://www.crookedstave.com">
+                <a class="btn btn-lg" href="http://www.crookedstave.com" title="http://www.crookedstave.com">
                   <i class="icon-globe"></i>
                 </a>
-                <a href="https://www.facebook.com/CSArtisans">
+                <a class="btn btn-lg" href="https://www.facebook.com/CSArtisans">
                   <i class="icon-facebook"></i>
                 </a>
               </p> 
