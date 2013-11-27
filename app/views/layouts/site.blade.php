@@ -30,29 +30,39 @@
     @yield('header')
 
 
-    <nav id="nav" class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="855">
+    <nav id="nav" class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="855" role="navigation">
       <div class="container">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#about" data-scroll="true">about</a>
-          </li>
-          <li>
-            <a href="#contact" data-scroll="true">contact</a>
-          </li>
-          <li>
-            <a href="#events" data-scroll="true">events</a>
-          </li>
-          <li>
-            <a href="#tenants" data-scroll="true" data-toggle="tenant-page-off">tenants</a>
-          </li>
-          <li>
-            <a href="#faq" data-scroll="true">faq</a>
-          </li>
-          <li>
-            <a href="#social" data-scroll="true">social</a>
-          </li>
-          <li id="active-slider"></li>
-        </ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#about" data-scroll="true">about</a>
+            </li>
+            <li>
+              <a href="#contact" data-scroll="true">contact</a>
+            </li>
+            <li>
+              <a href="#events" data-scroll="true">events</a>
+            </li>
+            <li>
+              <a href="#tenants" data-scroll="true" data-toggle="tenant-page-off">tenants</a>
+            </li>
+            <li>
+              <a href="#faq" data-scroll="true">faq</a>
+            </li>
+            <li>
+              <a href="#social" data-scroll="true">social</a>
+            </li>
+            <li id="active-slider"></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -91,36 +101,11 @@
       <div class="row">
         
         @for($i=0; $i<8; $i++)
-          <div class="col-lg-3">
+          <div class="col-sm-6 col-lg-3">
             <img class="img-responsive" src="{{ $photos->data[$i]->images->standard_resolution->url }}" />
           </div>
         @endfor
 
-
-        {{--<div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-1.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive" src="{{ asset('img/footer-image-2.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-2.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-2.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-2.jpg') }}" />
-        </div>
-        <div class="col-lg-3">
-          <img class="img-responsive hidden-xs" src="{{ asset('img/footer-image-1.jpg') }}" />
-        </div>--}}
       </div>
     </footer>
     

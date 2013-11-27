@@ -11,7 +11,7 @@
   <section id="about" class="page brand1-bg">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <p class="lead text-justify">
             The Source - (sôrs, srs) , n
 -an artisan food market that occupies a former 1880‘s brick foundry building in Denver’s River North  District. 
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-offset-4 col-lg-8">
+        <div class="col-md-offset-4 col-md-8">
           <p class="text-justify">
             Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; CapRock Farm Bar, a crafted cocktail and juice bar; and Babette’s Artisan Breads, a traditional French bakery. In the Commissary Space of the building are MeatHead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include Super Ordinary Gallery, a design store and exhibit space; the Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
           </p>
@@ -37,7 +37,7 @@
       <h1>contact</h1>
 
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <h3>hours</h3>
 
           <p class="lead">
@@ -59,7 +59,7 @@
           </p>
 
         </div>
-        <div class="col-lg-6 hidden-xs">
+        <div class="col-sm-6 hidden-xs">
           <div id="map-canvas"></div>
         </div>
       </div>
