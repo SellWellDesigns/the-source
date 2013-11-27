@@ -554,11 +554,11 @@
           </div>
 
           <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c4f">
               Why is a building like that located in RiNo?
               <b class="toggler">+</b>
             </a>
-            <div id="c2f" class="accordion-content collapse">
+            <div id="c4f" class="accordion-content collapse">
               <p>
                 Zeppelin Development has moved its office in RiNo, on the Taxi campus, in 2001. The site was the former Yellow Cab terminal and our company began to redevelop it into creative office spaces. It started with the original Yellow Cab building (home to Fuel Cafe for the last 5 and a half years now). There are now six buildings at Taxi- over 80 businesses and 44 residences, two restaurants, a coffee shop, a hair salon, a pilates studio, and an early childhood education center. We quickly became committed to this neighborhood for its culture, one that supports a new generation of businesses and people. There is an increasing appetite here to be in urban places that are outside the mainstream. It has been our home for over a decade and we see it as the next frontier for the growth for creative and high tech businesses in Denver. Also, the RiNo Arts District is the fastest growing one in the city. Part of the draw to this area is the empty canvas that it represents -it is comprised mostly of old industrial buildings waiting to get a new life. The Source is now a major catalyst for Brighton Boulevard, the main RiNo street that is widely considered a gateway to Denver. 
               </p>
@@ -566,11 +566,11 @@
           </div>
 
           <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c5f">
               Who designed the market as it is today?
               <b class="toggler">+</b>
             </a>
-            <div id="c2f" class="accordion-content collapse">
+            <div id="c5f" class="accordion-content collapse">
               <p>
                 The architect that led the transformation is Stephen Dynia, of Stephen Dynia Architects in Jackson, Wyoming. Dynia has worked on several other award-winning Zeppelin Development projects. In creating the new space, Dynia was committed to preserving the character of the building, keeping the space open and visibility high, and not confusing old and new elements. The result is a solid old brick building that remained very much intact, layered with clear modern industrial elements that create the market space that it became. There is air and light flowing through the spaces and while each tenant has its own space, visibility is high into each of the individual units even when they are closed.
               </p>
@@ -578,11 +578,11 @@
           </div>
 
           <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c6f">
               Who are your tenants?
               <b class="toggler">+</b>
             </a>
-            <div id="c2f" class="accordion-content collapse">
+            <div id="c6f" class="accordion-content collapse">
               <p>
                 The tenants are two restaurants, a butcher, a baker, a produce purveyor, a florist, a coffee shop, a brewery, a distillery bar, a cheese shop, and a bottle shop. A complete list is available in the tenant section, but what they do, the selection of crafts and offerings, is what the Source is about- a one stop shop for elevated food from all independent businesses. 
               </p>
@@ -590,11 +590,11 @@
           </div>
 
           <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c7f">
               How were tenants selected for the Source?
               <b class="toggler">+</b>
             </a>
-            <div id="c2f" class="accordion-content collapse">
+            <div id="c7f" class="accordion-content collapse">
               <p>
                 We talked to a lot of people, everyone who we knew had potential to be a good fit. It was a lot like dating- you meet, share life stories, find some common ground and from there the relationship evolves or doesn’t. We looked for people at the top of their field and started a conversation. Some of the best things about the project are the deals that did not work because they allowed us to keep searching for the best fit. The tenants in the Source are not only great at what they do, they also share the main vision for the Source - building a community and understand our vision for this project and its role in the RiNo neighborhood.
               </p>
@@ -602,11 +602,11 @@
           </div>
 
           <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c8f">
               Can I work at the Source?
               <b class="toggler">+</b>
             </a>
-            <div id="c2f" class="accordion-content collapse">
+            <div id="c8f" class="accordion-content collapse">
               <p>
                 The odds are yes, but you will need to do some scouting on your own. Each business at the Source operates independently and does its own hiring. Think about where you see yourself working and contact them directly -- or visit them in person with a resume.
               </p>
@@ -614,11 +614,11 @@
           </div>
 
           <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c9f">
               Can I host my next event at the Source?
               <b class="toggler">+</b>
             </a>
-            <div id="c2f" class="accordion-content collapse">
+            <div id="c9f" class="accordion-content collapse">
               <p>
                 Yes. Both restaurants, Acorn and Comida, as well as the CapRock Farm Bar and the brewery, Crooked Stave, are open to hosting private events. Because each is an independent business, the best way to go about hosting an event there is to contact them directly and discuss your vision for the event.
               </p>
@@ -670,7 +670,10 @@
     });
 
 
-
+    var mainNav = $('#nav');
+    $('a', mainNav).on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
 
 
 
