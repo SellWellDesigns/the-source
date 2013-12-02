@@ -75,22 +75,22 @@
     <footer id="social" class="brand4-bg text-center">
       <ul class="nav">
         <li>
-          <a href="#" class="brand1">
+          <a href="https://www.facebook.com/thesourcedenver" class="brand1">
             <i class="icon-2x icon-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="#" class="brand1">
+          <a href="http://thesourcedenver.tumblr.com/" class="brand1">
             <i class="icon-2x icon-tumblr"></i>
           </a>
         </li>
         <li>
-          <a href="#" class="brand1">
+          <a href="http://instagram.com/thesourcedenver" class="brand1">
             <i class="icon-2x icon-instagram"></i>
           </a>
         </li>
         <li>
-          <a href="#" class="brand1">
+          <a href="https://twitter.com/TheSourceDenver" class="brand1">
             <i class="icon-2x icon-twitter"></i>
           </a>
         </li>
