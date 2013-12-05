@@ -130,384 +130,44 @@
     <section id="tenants" class="page text-center brand2-bg">
       <div class="container">
         <h1>
-          <a href="#tenant-acorn" data-toggle="tenant-page">acorn</a>
+          <a href="{{ route('tenant.acorn') }}">acorn</a>
         </h1>
         <h1>
-          <a href="#tenant-american-provisions" data-toggle="tenant-page">american provisions</a>
+          <a href="{{ route('tenant.american-provisions') }}">americanum provisions</a>
         </h1>
         <h1>
-          <a href="#tenant-babettes" data-toggle="tenant-page">babette's</a>
+          <a href="{{ route('tenant.babettes') }}">babette's</a>
         </h1>
         <h1>
-          <a href="#tenant-beet-yarrow" data-toggle="tenant-page">beet & yarrow</a>
+          <a href="{{ route('tenant.beet-yarrow') }}">beet & yarrow</a>
         </h1>
         <h1>
-          <a href="#tenant-boxcar" data-toggle="tenant-page">boxcar coffee roasters</a>
+          <a href="{{ route('tenant.boxcar') }}">boxcar coffee roasters</a>
         </h1>
         <h1>
-          <a href="#tenant-caprock" data-toggle="tenant-page">caprock farm bar</a>
+          <a href="{{ route('tenant.caprock') }}">caprock farm bar</a>
         </h1>
         <h1>
-          <a href="#tenant-collegiate-peaks-bank" data-toggle="tenant-page">collegiate peaks bank</a>
+          <a href="{{ route('tenant.collegiate-peaks-bank') }}">collegiate peaks bank</a>
         </h1>
         <h1>
-          <a href="#tenant-comida" data-toggle="tenant-page">comida</a>
+          <a href="{{ route('tenant.comida') }}">comida</a>
         </h1>
         <h1>
-          <a href="#tenant-crooked-stave" data-toggle="tenant-page">crooked stave</a>
+          <a href="{{ route('tenant.crooked-stave') }}">crooked stave</a>
         </h1>
         <h1>
-          <a href="#tenant-meathead" data-toggle="tenant-page">meathead</a>
+          <a href="{{ route('tenant.meathead') }}">meathead</a>
         </h1>
         <h1>
-          <a href="#tenant-mondo-market" data-toggle="tenant-page">mondo market</a>
+          <a href="{{ route('tenant.mondo-market') }}">mondo market</a>
         </h1>
         <h1>
-          <a href="#tenant-proper-pour" data-toggle="tenant-page">proper pour</a>
+          <a href="{{ route('tenant.proper-pour') }}">proper pour</a>
         </h1>
         <h1>
-          <a href="#tenant-svperordinary" data-toggle="tenant-page">svper ordinary</a>
+          <a href="{{ route('tenant.svperordinary') }}">svper ordinary</a>
         </h1>
-      
-      
-        <div id="tenant-acorn" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Acorn is the sister restaurant to Boulder’s OAK at Fourteenth. The rustic yet refined eatery will serve chef Steven Redzikowski’s eclectic New American cooking in an approachable format at The Source. Much like OAK, at the core of Acorn’s dishes will be the oak-fired oven and grill. Complimenting a seasonal menu created with a commitment to locally-sourced ingredients will be Acorn’s elevated cocktail program and small-batch beer and wine list. In addition to the main floor dining room, guests can take a seat at the 15-seat bar opposite the open kitchen or dine in the 30-seat mezzanine space which overlooks the kitchen and chef's counter and offers spectacular views of the mountains. Cement and graffiti accents and Emeco seating made from recycled Coca Cola bottles, give the space an urban, eclectic feel, while the marble tabletops, leather banquettes and well-appointed lighting provide an elegant counterpoint.</p>
-                
-                <p>
-                  <a class="btn btn-lg" href="http://www.denveracorn.com/" title="http://www.denveracorn.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/denveracorn">
-                    <i class="icon-facebook"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://twitter.com/acorn_Denver">
-                    <i class="icon-twitter"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Acorn</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-svperordinary" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Acorn is the sister restaurant to Boulder’s OAK at Fourteenth. The rustic yet refined eatery will serve chef Steven Redzikowski’s eclectic New American cooking in an approachable format at The Source. Much like OAK, at the core of Acorn’s dishes will be the oak-fired oven and grill. Complimenting a seasonal menu created with a commitment to locally-sourced ingredients will be Acorn’s elevated cocktail program and small-batch beer and wine list. In addition to the main floor dining room, guests can take a seat at the 15-seat bar opposite the open kitchen or dine in the 30-seat mezzanine space which overlooks the kitchen and chef's counter and offers spectacular views of the mountains. Cement and graffiti accents and Emeco seating made from recycled Coca Cola bottles, give the space an urban, eclectic feel, while the marble tabletops, leather banquettes and well-appointed lighting provide an elegant counterpoint.</p>
-                
-                <p>
-                  <a class="btn btn-lg" href="http://www.denveracorn.com/" title="http://www.denveracorn.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/denveracorn">
-                    <i class="icon-facebook"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://twitter.com/acorn_Denver">
-                    <i class="icon-twitter"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>svper ordinary</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-boxcar" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Boxcar Coffee Roasters is a Boulder-based roaster and coffee shop that opened its first location in Boulder two years ago. A Denver outpost was recently opened on the TAXI campus in DRIVE, where Boxcar shares a large lobby area with ReFuel, a casual sandwich shop. The Source will become home to Boxcar’s roaster and another outlet for its specialty brewed coffee drinks.</p>
-                <p>
-                Boxcar coffee is roasted in small batches using a vintage roaster that was built in Germany in 1929. For some of the specialty coffee drinks, baristas boil ground beans long enough to extract exact flavor, then clarify with ice cubes and strain into mugs— this cowboy coffee method of preparation improves temperature control, counteracts high elevation, and makes for a perfect cup of java.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://boxcarcoffeeroasters.com" title="http://boxcarcoffeeroasters.com">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/boxcarcoffee">
-                    <i class="icon-facebook"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://twitter.com/boxcarcoffee">
-                    <i class="icon-twitter"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1 class="brand2">Boxcar Coffee Roasters</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-comida" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Comida, a taco truck turned Longmont cantina owned by Rayme Rossello, serves Mexican street food influenced by Rossello’s Southern upbringing. The hot pink truck, named Tina, started roaming the Front Range in 2010. Rossello opened the brick and mortar Comida Cantina in Longmont in 2012.</p>
-                <p>The new Comida location in The Source is a bigger version of its Longmont sister with a large patio and a mezzanine for group gatherings. Chef Martin Campos will serve Comida’s staple dishes while experimenting with local ingredients for specials. A well-executed dessert menu by an in-house pastry chef features a rotating arsenal of cookies and ice creams. The bar pours a well-curated selection of wine and beer, and offers a tequila and whiskey-dominant spirits list.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://www.eatcomida.com" title="http://www.eatcomida.com">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/eatcomida/info">
-                    <i class="icon-facebook"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://twitter.com/eatcomida">
-                    <i class="icon-twitter"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1 class="brand2">Comida</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-caprock" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>CapRock Farm Bar, named after Peak Spirits’ well-known gin and other spirits, gives visitors at The Source a taste of the Jack Rabbit Hill farm, winery, and distillery, located in Hotchkiss, Colorado in the North Fork Valley. The new bar will serve fresh, handmade orchard juices and crafted cocktails that showcase the brand. Fun fact: the CapRock name comes from a rock formation nearby that makes up the top lakes of Grand Mesa.</p>
-                <p>In addition to craft cocktails, visitors at the Farm Bar can purchase full bottles of Peak Sprits’ products, including peach and pear eau de vie, CapRock gin (distilled from apples), vodka, and grappa (distilled from their estate grapes). Peak Spirits are all distilled with local fruit and cut with untreated natural spring water.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://peakspirits.com/" title="http://peakspirits.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/CapRockFarmBar">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Caprock Farm Bar</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-collegiate-peaks-bank" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Collegiate Peaks Bank is the first full-service community bank to open in RiNo and gives Collegiate Peaks the ability to serve the influx of a new generation of businesses and residents in the emerging neighborhood. The bank provides financing for residential and commercial construction, revolving lines of credit for businesses and individuals, acquisition and development loans, commercial and industrial accounts receivable and inventory loans, equipment loans,small-business loans and a 24 hour ATM.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="https://www.collegiatepeaksbank.com/" title="https://www.collegiatepeaksbank.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Collegiate Peaks Bank</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-babettes" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Babette’s Artisan Breads is a traditional French bakery created by artisan baker Steve Scott. In addition to crafting and selling a variety of healthful breads, brioche, and croissants baked with organic grains, Scott, a natural teacher, plans to hire staff who seek baking apprenticeships. He’s passionate about passing on traditional French techniques to the next generation of bakers.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://babettebread.com/" title="http://babettebread.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/babettesartisanbreads">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Babette's</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-meathead" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>MeatHead is the in-house butcher at The Source with a bit of comedy and traditional flair. Owner Kevin Klinger comes from a long line of butchers and learned his trade the traditional way, by doing it for over three decades. Beef hanging on hooks, not in plastic or in a box, chicken fresh from the farm and a real connection to the trade is what this meat counter will be about. MeatHead aims to be a traditional and vert transparent butcher shop.</p>
-                <p>MeatHead will source its ethically and humanely raised and processed meats from suppliers like Four Sisters Farm and Tender Belly.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="https://www.facebook.com/meatheadsource">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Meathead</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-american-provisions" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Americanum Provisions is an ingredient-driven and food-community focused grocer. It’s a celebration of urban farmers. The shop features American-made, utilitarian kitchen consignments and food products, most of which are sourced within 10 miles of The Source. This produce-forward market sells fruit and vegetables from Produce Denver, The GrowHaus, and The Squeaky Bean’s Bean Acre Farm, among many others.</p>
-                <p>The utilitarian aesthetic of the store reminds shoppers of the humble produce retailers of the early 20th century. The Source’s urban feel combined with the freshness of Americanum’s products represents this vendor’s commitment to creating connections between urban and rural agriculture.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://americanumprovisions.com" title="http://americanumprovisions.com">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/AmericanumProvisions">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1 class="brand2">American Provisions</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-beet-yarrow" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Beet & Yarrow is a floral shop dedicated to the sustainable sourcing of floral products— using seasonal materials, ethically and environmentally grown and farmed flowers, and foraging— without sacrificing design.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://www.beetandyarrow.com/" title="http://www.beetandyarrow.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/BeetandYarrow">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Beet & Yarrow</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-mondo-market" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Mondo Market is a cheese and spice shop that will be both a fulfillment center and a retail outlet for MondoFood.com, a website dedicated to bringing hard-to-find ingredients primarily available to chefs to the everyday consumer. The website offers an extensive selection of specialty salts, oils, vinegars, artisan cheeses and dry cured meats, spices, meat and seafood, pantry items, confections and many gourmet and gastronomical retail items. Mondo Market in The Source will offer an array of both local and imported items and serve freshly made deli sandwiches.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://www.mondofood.com" title="http://www.mondofood.com">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/pages/MondoFoodcom">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Mondo Market</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-proper-pour" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Proper Pour is a specialty bottle shop that features small-batch spirits, independently-produced wines, and a curated selection of craft beer. Proper Pour is much more than just a liquor store, also offering carefully selected glassware, bar tools, cocktail books, and other items like bitters and aperitifs. Proper Pour is designing DIY cocktail kits that include all of the makings for individual drinks. The shop will highlight local distilleries and wineries, and sell many imported bottles as well.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://www.theproperpour.com/" title="http://www.theproperpour.com/">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/properpour">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Proper Pour</h1>
-            </div>
-          </div>
-        </div>
-
-        <div id="tenant-crooked-stave" class="tenant-sub-page">
-          <div class="row full-height relative">
-            <div class="col-lg-6 full-height relative">
-              <a class="tenant-back-button" href="#" data-target="#tenants" data-toggle="tenant-page-off">
-                <i class="icon-chevron-sign-left"></i>
-              </a>
-              <div class="well">
-                <p>Crooked Stave Artisans is a brewery focused on Belgian sour beers with a cult-like following in Denver and beyond. Launched in 2011 in Fort Collins, the company’s wine-forward, barrel-aged beers were first brewed onsite at Funkwerks. A year later, Crooked Stave relocated to its barrel-house in Denver and brewed at nearby Prost Brewing. Finally, Crooked Stave will have a real home to brew at The Source in a 20-barrel brewhouse.</p>
-                <p>In the new taproom, Crooked Stave’s followers will be able to enjoy signature beers, like the dry-hopped barrel-aged saison Vielle and the Belgian-inspired white beer St. Bretta, as well as a menu of ever-changing taps.</p>
-
-                <p>
-                  <a class="btn btn-lg" href="http://www.crookedstave.com" title="http://www.crookedstave.com">
-                    <i class="icon-globe"></i>
-                  </a>
-                  <a class="btn btn-lg" href="https://www.facebook.com/CSArtisans">
-                    <i class="icon-facebook"></i>
-                  </a>
-                </p> 
-              </div>
-            </div>
-            <div class="col-lg-6 full-height relative">
-              <h1>Crooked Stave</h1>
-            </div>
-          </div>
-        </div>
-
       </div>{{--/container--}}
 
     </section>
