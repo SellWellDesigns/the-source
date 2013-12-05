@@ -6,11 +6,13 @@ html, body {
 	width: 100%;
 }
 
+// @mainImage: '../img/header-bg-image.jpg';
+// @mainImage: '../img/Source_main.jpg';
+// @mainImage: '../img/source_mainalt2.jpg';
+@mainImage: '../img/source_mainalt3.jpg';
+
 body {
-	// background-image: url('../img/header-bg-image.jpg');
-	// background-image: url('../img/Source_main.jpg');
-	// background-image: url('../img/source_mainalt2.jpg');
-	background-image: url('../img/source_mainalt3.jpg');
+	background-image: url(@mainImage);
 	background-position: right top;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -73,7 +75,7 @@ h1 {
 }
 
 #faq {
-	overflow: hidden;
+	overflow: auto;
 }
 
 #header {
@@ -130,7 +132,7 @@ h1 {
 			color: white;
 			display: block;
 			font-size: 85px;
-			background: url(../img/header-bg-image.jpg) no-repeat;
+			background: url(@mainImage) no-repeat;
 			background-size: cover;
 			
 			-webkit-background-clip: text;
