@@ -1,6 +1,8 @@
-<div id="tenant-beet-yarrow" class="row full-height relative tenant-sub-page">
-  <div class="col-lg-6 full-height relative">
+<div id="tenant-beet-yarrow" class="row tenant-sub-page">
+  <div class="col-sm-6">
 
+    <h1>Beet & Yarrow</h1>
+    
     <div class="well tenant-content">
       
       <p>Beet & Yarrow is a floral shop dedicated to the sustainable sourcing of floral products—using seasonal materials, ethically and environmentally grown and farmed flowers, and foraging— without sacrificing design.</p>
@@ -16,11 +18,9 @@
 
     </div>
   </div>
-  <div class="col-lg-6 full-height relative">
+  <div class="col-sm-6">
     
     @include('tenants._directory')
-
-    <h1>Beet & Yarrow</h1>
 
   </div>
 </div>

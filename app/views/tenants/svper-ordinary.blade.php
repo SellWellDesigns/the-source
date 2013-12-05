@@ -1,6 +1,8 @@
-<div id="tenant-svperordinary" class="row full-height relative tenant-sub-page">
-  <div class="col-lg-6 full-height relative">
+<div id="tenant-svperordinary" class="row tenant-sub-page">
+  <div class="col-sm-6">
     
+    <h1>svper ordinary</h1>
+
     <div class="well tenant-content">
 
       <p>SVPER ORDINARY Gallery + Retail space encourages objects of art and design to find their place in our everyday environments. Emerging modern and contemporary artists are exhibited alongside a highly-curated collection of beautifully designed home goods. Here, the gallery and retail spaces exist as symbiotic entities, shaping a larger experience of curated, artful living. Each item is carefully considered and has been pulled from a global network of artists and designers to compliment each and every art show.</p>
@@ -19,11 +21,9 @@
 
     </div>
   </div>
-  <div class="col-lg-6 full-height relative">
+  <div class="col-sm-6">
 
     @include('tenants._directory')
     
-    <h1>svper ordinary</h1>
-
   </div>
 </div>

@@ -1,6 +1,8 @@
-<div id="tenant-caprock" class="row full-height relative tenant-sub-page">
-  <div class="col-lg-6 full-height relative">
+<div id="tenant-caprock" class="row tenant-sub-page">
+  <div class="col-sm-6">
 
+    <h1>Caprock Farm Bar</h1>
+    
     <div class="well tenant-content">
       
       <p>CapRock Farm Bar, named after the well known Colorado craft spirits, gives visitors at The Source a taste of Jack Rabbit Hill Farm in Hotchkiss,Colorado, where CapRock Gin, Vodka and Brandies are made.</p>
@@ -17,11 +19,9 @@
       
     </div>
   </div>
-  <div class="col-lg-6 full-height relative">
+  <div class="col-sm-6">
     
     @include('tenants._directory')
-
-    <h1>Caprock Farm Bar</h1>
 
   </div>
 </div>

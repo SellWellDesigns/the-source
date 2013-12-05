@@ -1,5 +1,7 @@
-<div id="tenant-boxcar" class="row full-height relative tenant-sub-page">
-  <div class="col-lg-6 full-height relative">
+<div id="tenant-boxcar" class="row tenant-sub-page">
+  <div class="col-sm-6">
+
+    <h1 class="brand2">Boxcar Coffee Roasters</h1>
 
     <div class="well tenant-content">
       <p>Boxcar Coffee Roasters is a Boulder-based roaster and coffee shop that opened its first location in Boulder two years ago. A Denver outpost was recently opened on the TAXI campus in DRIVE, where Boxcar shares a large lobby area with ReFuel, a casual sandwich shop. The Source will become home to Boxcar’s roaster and another outlet for its specialty brewed coffee drinks.</p>
@@ -19,11 +21,9 @@
 
     </div>
   </div>
-  <div class="col-lg-6 full-height relative">
+  <div class="col-sm-6">
 
     @include('tenants._directory')
-
-    <h1 class="brand2">Boxcar Coffee Roasters</h1>
 
   </div>
 </div>

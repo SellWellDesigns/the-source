@@ -1,5 +1,7 @@
-<div id="tenant-comida" class="row full-height relative tenant-sub-page">
-  <div class="col-lg-6 full-height relative">
+<div id="tenant-comida" class="row tenant-sub-page">
+  <div class="col-sm-6">
+    
+    <h1 class="brand2">Comida</h1>    
     
     <div class="well tenant-content">
       <p>Comida, a taco truck turned Longmont cantina owned by Rayme Rossello, serves Mexican street food influenced by Rossello’s Southern upbringing. The hot pink truck, named Tina, started roaming the Front Range in 2010. Rossello opened the brick and mortar Comida Cantina in Longmont in 2012.</p>
@@ -19,11 +21,9 @@
       
     </div>
   </div>
-  <div class="col-lg-6 full-height relative">
+  <div class="col-sm-6">
 
     @include('tenants._directory')
-
-    <h1 class="brand2">Comida</h1>
 
   </div>
 </div>
