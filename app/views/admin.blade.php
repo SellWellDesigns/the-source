@@ -26,18 +26,49 @@
   </head>
   <body>
 
-    <div class="btn-toolbar">
-      <div class="btn-group">
-        <a href="#" class="btn btn-primary">Add Event</a>
+    <nav id="nav" class="navbar navbar-inverse navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="{{asset('/')}}#about" data-scroll="true">about</a>
+            </li>
+            <li>
+              <a href="{{asset('/')}}#contact" data-scroll="true">contact</a>
+            </li>
+            <li>
+              <a href="{{asset('/')}}#events" data-scroll="true">events</a>
+            </li>
+            <li class="active">
+              <a href="{{asset('/')}}#tenants" data-scroll="true" data-toggle="tenant-page-off">tenants</a>
+            </li>
+            <li>
+              <a href="{{asset('/')}}#faq" data-scroll="true">faq</a>
+            </li>
+            <li>
+              <a href="{{asset('/')}}#social" data-scroll="true">social</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
     <div class="calendar-wrapper">
       
       <div class="calendar">
 
         <?php
-        $date = new DateTime(); 
+        if(!isset($date)){
+          $date = new DateTime();
+        }
 
         //This puts the day, month, and year in seperate variables 
         $day   = $date->format('d'); 
@@ -70,9 +101,13 @@
 
         $day_count = 1;
 
-        $prev_month = new DateTime('0:00 last day of previous month');
-        $prev_month->sub(new DateInterval('P' . ($blank-1) . 'D'));
-        $next_month = new DateTime('0:00 first day of next month');
+        $prev_month = DateTime::createFromFormat('U', strtotime('0:00 last day of previous month', $date->format('U')) );
+        $prev_month->sub(new DateInterval('P' . ($blank-1 > 0 ? $blank-1 : 0) . 'D'));
+        $next_month = DateTime::createFromFormat('U', strtotime('0:00 first day of next month', $date->format('U')) );
+
+        // $prev_month = new DateTime('0:00 last day of previous month');
+        // $prev_month->sub(new DateInterval('P' . ($blank-1 > 0 ? $blank-1 : 0) . 'D'));
+        // $next_month = new DateTime('0:00 first day of next month');
         ?>
 
 
@@ -80,13 +115,17 @@
 
         <ul class="month-browser">
           <li class="calendar_nav" >
-            &laquo; <a href="/calendar/2013-10/">{{ $prev_month->format('F') }}</a>
+            <a class="btn btn-primary" href="{{ route('admin.month', array($prev_month->format('m'), $prev_month->format('Y') )) }}">
+              &laquo; {{ $prev_month->format('F') }}
+            </a>
           </li>
           <li id="current-month">
-            November 2013
+            {{$date->format('F Y')}}
           </li>
           <li class="calendar_nav">
-            <a href="/calendar/2013-12/">{{ $next_month->format('F') }}</a> &raquo;
+            <a class="btn btn-primary" href="{{ route('admin.month', array($next_month->format('m'), $next_month->format('Y') )) }}">
+              {{ $next_month->format('F') }} &raquo;
+            </a>
           </li>
         </ul>
 
@@ -162,14 +201,99 @@
       </div>
     </div>
 
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Add Event</h4>
+          </div>
+
+          <div class="modal-body">
+            <form id="newEventForm">
+              
+              <fieldset>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Starts At</label>
+                      <input name="starts_at" class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Ends At</label>
+                      <input name="ends_at" class="form-control" type="text" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Location</label>
+                  <input name="location" class="form-control" type="text" />
+                </div>
+
+                <hr />
+
+                <div class="form-group">
+                  <label>Title</label>
+                  <input name="title" class="form-control" type="text" />
+                </div>
+
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea name="description" rows="8" class="form-control"></textarea>
+                </div>
+
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-event="create" data-target="#newEventForm">Add Event</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script>
     $(function(){
 
+      var $modal = $('#eventModal');
+
+      $modal.modal({
+        show: false
+      });
+
       $('.day_cell').on('click', function(e){
         e.preventDefault();
-        console.log( $(this).data() );
+        var 
+          data      = $(this).data(),
+          timestamp = data.timestamp
+        ;
+
+        $('[name="starts_at"]').add('[name="ends_at"]').val( timestamp );
+
+        $modal.modal('show');
+        return false;
+      });
+
+      $('[data-event="create"]').on('click', function(e){
+        e.preventDefault();
+
+        var form = $( $(this).data('target') );
+
+        $.post('{{route("admin.event.store")}}',
+          form.serialize(), 
+          function(data){
+            console.log(data);
+          }
+        );
+
         return false;
       });
 

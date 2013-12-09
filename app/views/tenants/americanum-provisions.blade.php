@@ -1,7 +1,7 @@
 <div id="tenant-american-provisions" class="row tenant-sub-page">
   <div class="col-sm-6">
 
-    <h1 class="brand2">American Provisions</h1>
+    <h1 class="brand2">Americanum Provisions</h1>
 
     <div class="well tenant-content">
       <p>Americanum Provisions is an ingredient-driven and food-community focused grocer. It’s a celebration of urban farmers. The shop features American-made, utilitarian kitchen consignments and food products, most of which are sourced within 10 miles of The Source. This produce-forward market sells fruit and vegetables from Produce Denver, The GrowHaus, and The Squeaky Bean’s Bean Acre Farm, among many others.</p>

@@ -1,7 +1,7 @@
 <div id="tenant-svperordinary" class="row tenant-sub-page">
   <div class="col-sm-6">
     
-    <h1>svper ordinary</h1>
+    <h1>SVPER ORDINARY</h1>
 
     <div class="well tenant-content">
 

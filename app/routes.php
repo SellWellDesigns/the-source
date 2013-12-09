@@ -121,5 +121,27 @@ Route::group(
             return View::make('admin');
         });
 
+        Route::get('/{month}/{year?}', array(
+            'as' => 'admin.month',
+            function($month, $year = false){
+                $date = new DateTime();
+
+                if(!$year){
+                    $year = $date->format('Y');
+                }
+
+                return View::make('admin', array(
+                    'date' => $date->setDate($year, $month, 01)
+                ));
+            }
+        ));
+
+        Route::post('/', array(
+            'as' => 'admin.event.store',
+            function(){
+                var_dump( Input::all() ); die();
+            }
+        ));
+
     }
 );

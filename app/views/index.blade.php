@@ -15,14 +15,14 @@
           <p class="lead text-justify">
             The Source - (sôrs, srs) , n
 -an artisan food market that occupies a former 1880‘s brick foundry building in Denver’s River North  District. 
-- a collective of food artisans offering visitors everything from freshly baked bread to craft cocktails, from street tacos to contemporary flower arrangements.
+- a collective of food artisans and retailers offering visitors everything from freshly baked bread to craft cocktails, from street tacos to contemporary flower arrangements.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-offset-4 col-md-8">
           <p class="text-justify">
-            Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; CapRock Farm Bar, a crafted cocktail and juice bar; and Babette’s Artisan Breads, a traditional French bakery. In the Commissary Space of the building are MeatHead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include Super Ordinary Gallery, a design store and exhibit space; the Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
+            Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; CapRock Farm Bar, a crafted cocktail and juice bar; and Babette’s Artisan Breads, a traditional French bakery. In the Commissary Space of the building are Meathead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include SVPER ORDINARY, a design store and exhibit space; The Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
           </p>
           <p class="text-justify">
             The Source offers a one-stop shopping experience for the food-obsessed while also providing some of Denver’s best artisans with an outlet for their crafts. The openness of the building speaks to its community-oriented philosophy. It was repurposed under the guidance of architect Stephen Dynia with a strong commitment to preserving its industrial identity while adapting it for its current use. The industrial design with clear layers of new materials complementing the original shell conveys the integrity and edginess both of the tenants themselves and of this new marketplace. 
@@ -75,6 +75,7 @@
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1e">
             <span class="date">Saturday November 30th</span>
+            The Source - 
             Small Business Saturday
             <b class="toggler">+</b>
           </a>
@@ -92,12 +93,13 @@
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3e">
             <span class="date">Sunday December 8th</span>
+            CapRock - 
             Guest Bartender Sunday
             <b class="toggler">+</b>
           </a>
           <div id="c3e" class="accordion-content collapse">
             <p>
-              Come out each and every sunday to catch drinks from some of Colorado's best bartenders and Caprock. Starting at 5:00 pm and running til close we will have drink specials each and every week. 
+              Come out each and every sunday to catch drinks from some of Colorado's best bartenders and CapRock. Starting at 5:00 pm and running til close we will have drink specials each and every week. 
             </p>
           </div>
         </div>
@@ -105,11 +107,12 @@
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2e">
             <span class="date">Wednesday December 18th</span>
+            CapRock - 
             Choreography and Cocktails
             <b class="toggler">+</b>
           </a>
           <div id="c2e" class="accordion-content collapse">
-            <h4>Caprock Farm Bar</h4>
+            <h4>CapRock Farm Bar</h4>
             <p>
               AN INVITATION TO A SHOWING PRESENTATION BY INTERNATIONAL CHOREOGRAPHER ROBERT SHER-MACHHERNDL.  EXPERIENCE WORLDCLASS PERFORMANCE AT THE SOURCE, A HIP REPURPOSED FOUNDRY IN DENVER.
             </p>
@@ -163,7 +166,7 @@
           <a href="{{ route('tenant.mondo-market') }}">mondo market</a>
         </h1>
         <h1>
-          <a href="{{ route('tenant.proper-pour') }}">proper pour</a>
+          <a href="{{ route('tenant.proper-pour') }}">the proper pour</a>
         </h1>
         <h1>
           <a href="{{ route('tenant.svperordinary') }}">svper ordinary</a>
@@ -179,8 +182,8 @@
 
         <div id="faq-accordion" class="accordion">
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c1f">
               What is The Source?
               <b class="toggler">+</b>
             </a>
@@ -191,8 +194,8 @@
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c2f">
               Where are you located?
               <b class="toggler">+</b>
             </a>
@@ -203,8 +206,8 @@
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c3f">
               What inspired the Source?
               <b class="toggler">+</b>
             </a>
@@ -215,20 +218,20 @@
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c4f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c4f">
               Why is a building like that located in RiNo?
               <b class="toggler">+</b>
             </a>
             <div id="c4f" class="accordion-content collapse">
               <p>
-                Zeppelin Development has moved its office in RiNo, on the Taxi campus, in 2001. The site was the former Yellow Cab terminal and our company began to redevelop it into creative office spaces. It started with the original Yellow Cab building (home to Fuel Cafe for the last 5 and a half years now). There are now six buildings at Taxi- over 80 businesses and 44 residences, two restaurants, a coffee shop, a hair salon, a pilates studio, and an early childhood education center. We quickly became committed to this neighborhood for its culture, one that supports a new generation of businesses and people. There is an increasing appetite here to be in urban places that are outside the mainstream. It has been our home for over a decade and we see it as the next frontier for the growth for creative and high tech businesses in Denver. Also, the RiNo Arts District is the fastest growing one in the city. Part of the draw to this area is the empty canvas that it represents -it is comprised mostly of old industrial buildings waiting to get a new life. The Source is now a major catalyst for Brighton Boulevard, the main RiNo street that is widely considered a gateway to Denver. 
+                In 2001, Zeppelin Development moved its office to the Taxi campus in RiNo. The site was the former Yellow Cab terminal and our company began to redevelop it into creative office spaces. It started with the original Yellow Cab building (home to Fuel Cafe for the last 5 and a half years now). There are now six buildings at Taxi- over 80 businesses and 44 residences, two restaurants, a coffee shop, a hair salon, a pilates studio, and an early childhood education center. We quickly became committed to this neighborhood for its culture, one that supports a new generation of businesses and people. There is an increasing appetite here to be in urban places that are outside the mainstream. It has been our home for over a decade and we see it as the next frontier for the growth for creative and high tech businesses in Denver. Also, the RiNo Arts District is the fastest growing one in the city. Part of the draw to this area is the empty canvas that it represents -it is comprised mostly of old industrial buildings waiting to get a new life. The Source is now a major catalyst for Brighton Boulevard, the main RiNo street that is widely considered a gateway to Denver. 
               </p>
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c5f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c5f">
               Who designed the market as it is today?
               <b class="toggler">+</b>
             </a>
@@ -239,20 +242,20 @@
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c6f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c6f">
               Who are your tenants?
               <b class="toggler">+</b>
             </a>
             <div id="c6f" class="accordion-content collapse">
               <p>
-                The tenants are two restaurants, a butcher, a baker, a produce purveyor, a florist, a coffee shop, a brewery, a distillery bar, a cheese shop, and a bottle shop. A complete list is available in the tenant section, but what they do, the selection of crafts and offerings, is what the Source is about- a one stop shop for elevated food from all independent businesses. 
+                The tenants are two restaurants, a butcher, a baker, a produce purveyor, a florist, a coffee shop, a brewery, a distillery bar, a cheese shop, a gallery, a design store, a bank, and a bottle shop. A complete list is available in the tenant section, but what they do, the selection of crafts and offerings, is what the Source is about- a one stop shop for elevated food from all independent businesses. 
               </p>
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c7f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c7f">
               How were tenants selected for the Source?
               <b class="toggler">+</b>
             </a>
@@ -263,8 +266,8 @@
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c8f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c8f">
               Can I work at the Source?
               <b class="toggler">+</b>
             </a>
@@ -275,8 +278,8 @@
             </div>
           </div>
 
-          <div class="source-accordion">
-            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c9f">
+          <div class="panel source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#faq-accordion" href="#c9f">
               Can I host my next event at the Source?
               <b class="toggler">+</b>
             </a>
@@ -423,7 +426,11 @@
      */
     $('.accordion')
       .on('show.bs.collapse', function(e){
-          var toggle = $(e.target).parent();
+          var
+            target = $(e.target),
+            toggle = target.parent()
+          ;
+
           toggle.addClass('in');
       })
       .on('hide.bs.collapse', function(e){

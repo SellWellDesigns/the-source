@@ -47,7 +47,7 @@
             <li>
               <a href="{{asset('/')}}#events" data-scroll="true">events</a>
             </li>
-            <li>
+            <li class="active">
               <a href="{{asset('/')}}#tenants" data-scroll="true" data-toggle="tenant-page-off">tenants</a>
             </li>
             <li>

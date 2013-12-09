@@ -1,7 +1,7 @@
 <div id="tenant-caprock" class="row tenant-sub-page">
   <div class="col-sm-6">
 
-    <h1>Caprock Farm Bar</h1>
+    <h1>CapRock Farm Bar</h1>
     
     <div class="well tenant-content">
       
