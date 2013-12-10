@@ -4,8 +4,8 @@
     <h1 class="brand2">Boxcar Coffee Roasters</h1>
 
     <div class="well tenant-content">
-      <p>Boxcar Coffee Roasters is a Boulder-based roaster and coffee shop that opened its first location in Boulder two years ago. A Denver outpost was recently opened on the TAXI campus in DRIVE, where Boxcar shares a large lobby area with ReFuel, a casual sandwich shop. The Source will become home to Boxcar’s roaster and another outlet for its specialty brewed coffee drinks.</p>
-      <p>Boxcar coffee is roasted in small batches using a vintage roaster that was built in Germany in 1929. For some of the specialty coffee drinks, baristas boil ground beans long enough to extract exact flavor, then clarify with ice cubes and strain into mugs— this cowboy coffee method of preparation improves temperature control, counteracts high elevation, and makes for a perfect cup of java.</p>
+      <p>Boxcar Coffee Roasters was established in 2010, with their first cafe opening shortly after in the summer of 2011on Boulder's iconic Pearl Street. Following their success in Boulder, Boxcar is now moving their roastery and have opened a new cafe in Denver here at The Source. They have developed a brewing method called the Boilermakr to help brew a great cup of coffee at Colorado's high elevation. Boxcar immerses the grounds in boiling water to get the ideal extraction out of every cup.</p>
+      <p>Selecting the finest coffees available, Boxcar roasts in small batches to preserve origin character while maximizing balance & sweetness on their refurbished 1929 Gothot Ideal Rapid roaster. Their focus on hand crafted drinks and outstanding hospitality make Boxcar a great destination for all coffee lovers.</p>
 
       <p>
         <a class="btn btn-lg" href="http://boxcarcoffeeroasters.com" title="http://boxcarcoffeeroasters.com">
