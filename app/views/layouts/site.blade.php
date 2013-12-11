@@ -17,18 +17,15 @@
       <script src="{{ asset('js/respond.min.js') }}"></script>
     <![endif]-->
 
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('icons/Source_favicon_144.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('icons/Source_favicon_114.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('icons/Source_favicon_72.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('icons/Source_favicon_57.png') }}">
-    <link rel="shortcut icon" href="{{ asset('icons/favicon.ico') }}">
-    <link rel="shortcut icon" href="{{ asset('icons/Source_favicon_32.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('icns/Source_favicon_144.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('icns/Source_favicon_114.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('icns/Source_favicon_72.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('icns/Source_favicon_57.png') }}">
+    <link rel="shortcut icon" href="{{ asset('icns/Source_favicon_32.png') }}">
   </head>
   <body data-spy="scroll" data-target="#nav" data-offset="200">
 
-
     @yield('header')
-
 
     <nav id="nav" class="navbar navbar-inverse navbar-default" data-spy="affix" data-offset-top="855" role="navigation">
       <div class="container">
@@ -65,12 +62,8 @@
         </div>
       </div>
     </nav>
-
-
     
     @yield('content')
-
-
 
     <footer id="social" class="brand4-bg text-center">
       <ul class="nav">
@@ -108,7 +101,6 @@
 
       </div>
     </footer>
-    
 
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>

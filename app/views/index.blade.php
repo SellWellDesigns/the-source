@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-md-offset-4 col-md-8">
           <p class="text-justify">
-            Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; CapRock Farm Bar, a crafted cocktail and juice bar; and Babette’s Artisan Breads, a traditional French bakery. In the Commissary Space of the building are Meathead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include SVPER ORDINARY, a design store and exhibit space; The Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
+            Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; CapRock Farm Bar, a crafted cocktail and juice bar; and Babettes Artisan Breads, a traditional French bakery. In the Commissary Space of the building are Meathead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include SVPER ORDINARY, a design store and exhibit space; The Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
           </p>
           <p class="text-justify">
             The Source offers a one-stop shopping experience for the food-obsessed while also providing some of Denver’s best artisans with an outlet for their crafts. The openness of the building speaks to its community-oriented philosophy. It was repurposed under the guidance of architect Stephen Dynia with a strong commitment to preserving its industrial identity while adapting it for its current use. The industrial design with clear layers of new materials complementing the original shell conveys the integrity and edginess both of the tenants themselves and of this new marketplace. 
@@ -71,38 +71,6 @@
       <h1>events</h1>
 
       <div id="events-accordion" class="accordion">
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c1e">
-            <span class="date">Saturday November 30th</span>
-            The Source - 
-            Small Business Saturday
-            <b class="toggler">+</b>
-          </a>
-          <div id="c1e" class="accordion-content collapse">
-            <h4>The Source</h4>
-            <p>
-              Forget the Black Friday rush and do your holiday shopping at The Source. Stop by SVPER ORDINARY gallery to pick up everything from art, to jewelry and one-of-a-kinda house wares Open from 11 am - 8 pm daily.
-            </p>
-            <p>
-              If Drinks are more what you are what you are looking for check out Proper Pour for a expertly curated collection of beer, wine and spirits from around the world. Open 10 am daily except Monday when they open at 5 pm
-            </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c2e">
-            <span class="date">Sunday December 8th</span>
-            CapRock - 
-            Guest Bartender Sunday
-            <b class="toggler">+</b>
-          </a>
-          <div id="c2e" class="accordion-content collapse">
-            <p>
-              Come out each and every sunday to catch drinks from some of Colorado's best bartenders and CapRock. Starting at 5:00 pm and running til close we will have drink specials each and every week. 
-            </p>
-          </div>
-        </div>
 
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3e">
@@ -184,7 +152,7 @@
           <a href="{{ route('tenant.american-provisions') }}">americanum provisions</a>
         </h1>
         <h1>
-          <a href="{{ route('tenant.babettes') }}">babette's</a>
+          <a href="{{ route('tenant.babettes') }}">babettes</a>
         </h1>
         <h1>
           <a href="{{ route('tenant.beet-yarrow') }}">beet & yarrow</a>
@@ -399,16 +367,16 @@
     /**
      * Affix FAQ section
      */
-    $('#faq').affix({
-      offset: {
-        top: function(){
-          return ( this.top = ($('#pageFold').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
-        },
-        bottom: function () {
-          return (this.bottom = $('#footer').outerHeight(true) + 100)
-        }
-      }
-    });
+    // $('#faq').affix({
+    //   offset: {
+    //     top: function(){
+    //       return ( this.top = ($('#pageFold').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
+    //     },
+    //     bottom: function () {
+    //       return (this.bottom = $('#footer').outerHeight(true) + 100)
+    //     }
+    //   }
+    // });
 
 
 

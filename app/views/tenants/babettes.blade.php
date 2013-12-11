@@ -1,7 +1,7 @@
 <div id="tenant-babettes" class="row tenant-sub-page">
   <div class="col-sm-6">
     
-    <h1>Babette's</h1>
+    <h1>Babettes</h1>
         
     <div class="well tenant-content">
       
