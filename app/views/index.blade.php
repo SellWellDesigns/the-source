@@ -367,16 +367,16 @@
     /**
      * Affix FAQ section
      */
-    // $('#faq').affix({
-    //   offset: {
-    //     top: function(){
-    //       return ( this.top = ($('#pageFold').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
-    //     },
-    //     bottom: function () {
-    //       return (this.bottom = $('#footer').outerHeight(true) + 100)
-    //     }
-    //   }
-    // });
+    $('#faq').affix({
+      offset: {
+        top: function(){
+          return ( this.top = ($('#pageFold').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
+        },
+        bottom: function () {
+          return (this.bottom = $('#footer').outerHeight(true) + 100)
+        }
+      }
+    });
 
 
 
