@@ -14,7 +14,7 @@ html, body {
 
 body {
 	background-image: url(@mainImage);
-	background-position: right top;
+	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -216,7 +216,7 @@ h1 {
 
 #tenant-comida {
 	// background-image: url('../img/SOURCE-1482.jpg');
-	background-image: url('../img/Source_comida.jpg');
+	background-image: url('../img/source_comida.jpg');
 	background-size: cover;
 }
 
@@ -277,18 +277,21 @@ h1 {
 #faq {
 	padding: 0;
 
-	// &.affix-top {
-	// 	position: static;
-	// 	margin-top: -900px;
-	// }
+	&.affix-top {
+		position: static;
+		margin-top: -955px;
+	}
 
-	// &.affix {
-	// 	width: 100%;
-	// }
+	&.affix {
+		position: fixed;
+		top: 700px;
+		width: 100%;
+		z-index: 10000;
+	}
 
-	// &.affix-bottom {
-	// 	position: static;
-	// }
+	&.affix-bottom {
+		position: static;
+	}
 
 }
 
@@ -348,8 +351,7 @@ h1 {
 		font-size: 80px;
 	}
 	#tenants {
-		height: 1030px !important;
-
+		padding-top: 30px;
 		h1 a {
 			font-size: 40px;
 		}
@@ -374,6 +376,11 @@ h1 {
 		}
 		.tenant-directory {
 			float: none;
+		}
+	}
+	.source-accordion {
+		.accordion-heading {
+			padding: 20px 40px 20px 20px;
 		}
 	}
 }

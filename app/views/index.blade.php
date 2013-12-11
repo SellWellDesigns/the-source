@@ -321,17 +321,19 @@
   //doc ready
   $(function(){
 
+    $window = $(window);
+
 
     /**
      * Parallax Effect
      */
     var
-      windowHeight = $(window).height(),
+      windowHeight = $window.height(),
       logo         = $('#logo')[0],
       $body        = $('body')
     ;
 
-    $(window).on('scroll', function()
+    $window.on('scroll', function()
     {
       var
         posY = (document.documentElement.scrollTop)
@@ -344,9 +346,9 @@
       logo.style.backgroundPosition =  "center " + logoScroll + "px"; 
     });
 
-    $(window).on('resize', function()
+    $window.on('resize', function()
     {
-      windowHeight = $(window).height();
+      windowHeight = $window.height();
     });
 
 
@@ -363,23 +365,67 @@
     /**
      * Affix FAQ section
      */
-    $('#faq').affix({
-      offset: {
-        top: function(){
-          // 3013
-          // console.log( ($('#tenants').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
-          return 3013;
-          // return ( this.top = ($('#tenants').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
-        }
-        ,
-        bottom: function () {
-          console.log( $('#tenants').offset().top + $('#tenants').height() );
-          return 4000;
-          // return (this.bottom = $('#footer').outerHeight(true) + 100)
-        }
-      }
-    });
+    // $('#faq').affix({
+    //   offset: {
+    //     top: function(){
+    //       // 3013
+    //       // console.log( ($('#tenants').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
+    //       return 3013;
+    //       // return ( this.top = ($('#tenants').offset().top - ($('#nav').outerHeight(true) * 2) + 20) );
+    //     }
+    //     ,
+    //     bottom: function () {
+    //       console.log( $('#tenants').offset().top + $('#tenants').height() );
+    //       return 4000;
+    //       // return (this.bottom = $('#footer').outerHeight(true) + 100)
+    //     }
+    //   }
+    // });
+    
+    var
+      $faq        = $('#faq'),
+      $affixReset = 'affix affix-top affix-bottom',
+      topPin      = 2994,
+      bottomPin   = 3945
+    ;
 
+    $faq.addClass('affix-top');
+
+    $window.on('scroll', function(){
+
+      if($window.width() <= 992){
+        $faq.removeClass($affixReset);
+        return;
+      }
+
+      var
+        scrollTop = $window.scrollTop()
+      ;
+// console.log(scrollTop);
+      if(scrollTop >= bottomPin){
+
+        $faq
+          .removeClass($affixReset)
+          .addClass('affix-bottom')
+        ;
+
+      } else if(scrollTop >= topPin){
+
+        $faq
+          .removeClass($affixReset)
+          .addClass('affix')
+        ;
+
+      } else {
+
+        $faq
+          .removeClass($affixReset)
+          .addClass('affix-top')
+        ;
+
+      }
+
+    });
 
 
     /**
