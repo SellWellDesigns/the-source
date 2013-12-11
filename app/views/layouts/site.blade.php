@@ -102,9 +102,17 @@
       </div>
     </footer>
 
-    <script src="{{ asset('js/jquery.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    @yield('scripts')
+    <script>
+      document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');
+    </script>
+    <script>
+      if(!window.jQuery) {
+        document.write('<script src="{{ asset('js/jquery.js') }}"><\/script>');
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="{{ asset('js/actions.min.js') }}"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
