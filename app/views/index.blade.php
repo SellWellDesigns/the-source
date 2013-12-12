@@ -135,7 +135,7 @@
           <div id="c6e" class="accordion-content collapse">
             <h4>Americanum Provisions</h4>
             <p>
-              Pick up some freshly roasted chestnuts from Americanum Provisions today. Proprietor Rise Tren will be roasting in front of the Source throughout the day.
+              Pick up some freshly roasted chestnuts from Americanum Provisions today. Proprietor Rise Tren will be roasting in front of the Source from 11am-430pm.
             </p>
           </div>
         </div>
