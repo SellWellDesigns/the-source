@@ -119,17 +119,35 @@
               MONTE-CARLO BALLET AND ROBERT SHER-MACHHERNDL CREATE AN EVENING OF 
               EUROPEAN SOPHISTICATION. 
             </p>
+            <p>
+              TICKETS AVAILABLE HERE: <a href="http://events.r20.constantcontact.com/register/event?oeidk=a07e8j8kd54b2f86f8f&llr=jrh8cacab">http://events.r20.constantcontact.com/register/event?oeidk=a07e8j8kd54b2f86f8f&llr=jrh8cacab</a>
+            </p>
           </div>
         </div>
 
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c6e">
+            <span class="date">Sunday, December 22</span>
+            Americanum Provisions - 
+            Roasted Chestnuts
+            <b class="toggler">+</b>
+          </a>
+          <div id="c6e" class="accordion-content collapse">
+            <h4>Americanum Provisions</h4>
+            <p>
+              Pick up some freshly roasted chestnuts from Americanum Provisions today. Proprietor Rise Tren will be roasting in front of the Source throughout the day.
+            </p>
+          </div>
+        </div>
+
+        <div class="source-accordion">
+          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c7e">
             <span class="date">December 31st</span>
             The Source - 
             New Years Eve
             <b class="toggler">+</b>
           </a>
-          <div id="c6e" class="accordion-content collapse">
+          <div id="c7e" class="accordion-content collapse">
             <h4>The Source</h4>
             <p>
               Count down the new year at The Source. With New Year's specials from many of our tenants and a Cocktails and Caviar event hosted at Caprock Farm Bar's central bar, you'll be starting out your 2014 right.

@@ -7,7 +7,7 @@
           <a href="{{ route('tenant.american-provisions') }}">americanum provisions</a>
         </li>
         <li{{ Request::is(str_replace('/','',route('tenant.babettes', array(), false))) ? ' class="active"' : '' }}>
-          <a href="{{ route('tenant.babettes') }}">babette's</a>
+          <a href="{{ route('tenant.babettes') }}">babettes</a>
         </li>
         <li{{ Request::is(str_replace('/','',route('tenant.beet-yarrow', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.beet-yarrow') }}">beet & yarrow</a>
