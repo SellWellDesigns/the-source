@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"twitter/bootstrap": "v3.0.0",
-		"components/font-awesome": "3.2.*@dev"
+		"components/font-awesome": "3.2.*@dev",
+		"roumen/sitemap": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

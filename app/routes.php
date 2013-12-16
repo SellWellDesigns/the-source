@@ -111,6 +111,33 @@ Route::get('svper-ordinary', array(
 
 
 
+Route::get('sitemap', function(){
+    $sitemap = App::make('sitemap');
+
+    $lastUpdated = '2013-12-01';
+
+    $sitemap->add( route('home'), $lastUpdated, '1.0', 'daily' );
+    $sitemap->add( route('tenant.acorn'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.american-provisions'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.babettes'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.beet-yarrow'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.boxcar'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.caprock'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.collegiate-peaks-bank'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.comida'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.crooked-stave'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.meathead'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.mondo-market'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.proper-pour'), $lastUpdated, '0.5', 'monthly' );
+    $sitemap->add( route('tenant.svperordinary'), $lastUpdated, '0.5', 'monthly' );
+
+    return $sitemap->render('xml');
+});
+
+
+
+
+
 
 Route::group(
     array(
