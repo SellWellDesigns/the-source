@@ -42,7 +42,7 @@
 
           <p class="lead">
             Monday - Friday 8:00am - 11:00pm<br />
-            Saturday - Sunday 9:00am - 12:00am
+            Saturday - Sunday 9:00am - 11:00pm
           </p>
 
           <p class="lead">
@@ -71,36 +71,6 @@
       <h1>events</h1>
 
       <div id="events-accordion" class="accordion">
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c3e">
-            <span class="date">December 13-15</span>
-            The Source - 
-            Colorado Makers Market
-            <b class="toggler">+</b>
-          </a>
-          <div id="c3e" class="accordion-content collapse">
-            <h4>The Source</h4>
-            <p>
-              The first annual Colorado Makers Holiday Market will be at the Source in Denver December 13th - 15th. Friday, December 13th we will be hosting Happy Hour at the Caprock Farm Bar. Tickets are $20 and includes two cocktails and raffle entry. For every ticket purchased is a chance to win a basket of Colorado made goods. Saturday & Sunday are free to attend all day.
-            </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c4e">
-            <span class="date">December 14th</span>
-            Svper Ordinary - 
-            Still Winter
-            <b class="toggler">+</b>
-          </a>
-          <div id="c4e" class="accordion-content collapse">
-            <h4>Svper Ordinary</h4>
-            <p>
-              The Svper Ordinary family is getting excited and starting to prep for our next show Still Winter featuring new works by Paul Michel. Join us second Saturday in December for the opening reception from 6 -10 pm.
-            </p>
-          </div>
-        </div>
         
         <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c5e">
