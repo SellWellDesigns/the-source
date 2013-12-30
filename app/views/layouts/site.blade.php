@@ -103,6 +103,8 @@
       </div>
     </footer>
 
+    <a href="http://www.cssdesignawards.com/sites/the-source-denver/24043" id="cssda-award" target="_blank"></a>
+
     <script>
       document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');
     </script>
