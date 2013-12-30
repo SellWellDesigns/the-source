@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="An artisan food market that occupies a former 1880‘s brick foundry building in Denver’s River North  District.">
+    <meta name="author" content="Sell Well Designs">
+    <meta name="msvalidate.01" content="FB7C9E11A88258519F6340ED52E0945B" />
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
     <title>The Source</title>
