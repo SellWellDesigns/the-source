@@ -73,44 +73,6 @@
       <div id="events-accordion" class="accordion">
         
         <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c5e">
-            <span class="date">Wednesday December 18th</span>
-            CapRock - 
-            Choreography and Cocktails
-            <b class="toggler">+</b>
-          </a>
-          <div id="c5e" class="accordion-content collapse">
-            <h4>CapRock Farm Bar</h4>
-            <p>
-              AN INVITATION TO A SHOWING PRESENTATION BY INTERNATIONAL CHOREOGRAPHER ROBERT SHER-MACHHERNDL.  EXPERIENCE WORLDCLASS PERFORMANCE AT THE SOURCE, A HIP REPURPOSED FOUNDRY IN DENVER.
-            </p>
-            <p>
-              AWARD-WINNING EUROPEAN DANCERS SANDRINE CASSINI, FORMERLY OF PARIS OPERA BALLET,  
-              MONTE-CARLO BALLET AND ROBERT SHER-MACHHERNDL CREATE AN EVENING OF 
-              EUROPEAN SOPHISTICATION. 
-            </p>
-            <p>
-              TICKETS AVAILABLE HERE: <a href="http://events.r20.constantcontact.com/register/event?oeidk=a07e8j8kd54b2f86f8f&llr=jrh8cacab">http://events.r20.constantcontact.com/register/event?oeidk=a07e8j8kd54b2f86f8f&llr=jrh8cacab</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c6e">
-            <span class="date">Sunday, December 22</span>
-            Americanum Provisions - 
-            Roasted Chestnuts
-            <b class="toggler">+</b>
-          </a>
-          <div id="c6e" class="accordion-content collapse">
-            <h4>Americanum Provisions</h4>
-            <p>
-              Pick up some freshly roasted chestnuts from Americanum Provisions today. Proprietor Rise Tren will be roasting in front of the Source from 11am-430pm.
-            </p>
-          </div>
-        </div>
-
-        <div class="source-accordion">
           <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c7e">
             <span class="date">December 31st</span>
             The Source - 
