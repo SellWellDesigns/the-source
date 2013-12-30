@@ -2,7 +2,7 @@
 
 @section('header')
   <header id="header" class="text-center">
-    <div id="logo"></div>
+    <div id="logo" title="The Source"></div>
   </header>
 @stop
 
