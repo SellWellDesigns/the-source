@@ -28,7 +28,8 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+    'local' => array('Conars-iMac.local'),
+	'production' => array('localhost', 'http://thesourcedenver/com', 'http://www.thesourcedenver/com'),
 
 ));
 
