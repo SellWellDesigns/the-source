@@ -1,11 +1,7 @@
-@extends('layouts.site')
+<div class="gradient navbar-fix">
+	<div class="container">
+		<h1>Add Event</h1>
 
-@section('content')
-	<div class="gradient navbar-fix">
-		<div class="container">
-			<h1>Add Event</h1>
-
-			@include('events._form')
-		</div>
+		@include('events._form')
 	</div>
-@stop
+</div>

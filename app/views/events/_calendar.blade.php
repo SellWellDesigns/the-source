@@ -17,7 +17,7 @@
 						<span class="day">{{ date('D', $day->timestamp) }},</span> <span class="month">{{ date('M', $day->timestamp) }}</span> {{ date('j', $day->timestamp) }}
 					</div>
 					@foreach($day->events as $event)
-						<a href="" class="show-info cobb-venue">
+						<a href="{{ route('admin.events.show', $event->id) }}" class="show-info cobb-venue">
 							<div class="show-name">{{ $event->title }}</div>
 							<div class="show-time">{{ $event->starts_at }} - {{ $event->ends_at }}</div>
 							<div class="venue">{{ $event->location }}</div>

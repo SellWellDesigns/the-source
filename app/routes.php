@@ -15,16 +15,22 @@ Route::get('/', array(
     'as' => 'home',
     function()
     {
-        $photos = Cache::remember('photos', 30, function(){
-            $photos = file_get_contents('https://api.instagram.com/v1/tags/thesourcedenver/media/recent?client_id=f8968ab4a82445b5b01e990c20d3fa53');
-            return json_decode($photos);
-        });
-
-        return View::make('index', compact('photos'));
+        $events = CalendarEvent::current()->limit(7)->get();
+        return View::make('index', compact('photos', 'events'));
     }
 ));
 
 
+
+
+View::composer('layouts.site', function($view){
+    $photos = Cache::remember('photos', 30, function(){
+        $photos = file_get_contents('https://api.instagram.com/v1/tags/thesourcedenver/media/recent?client_id=f8968ab4a82445b5b01e990c20d3fa53');
+        return json_decode($photos);
+    });
+
+    $view->with('photos', $photos);
+});
 
 
 
@@ -137,20 +143,47 @@ Route::get('sitemap', function(){
 
 
 
+Route::get('login', array(
+    'as' => 'login',
+    function(){
+        return View::make('session.login');
+    }
+));
+
+Route::get('logout', function(){
+    Auth::logout();
+    return Redirect::route('login');
+});
+
+Route::post('login', function(){
+    if(Auth::attempt(array('username' => Input::get('username'), 'password' => Input::get('password') )))
+    {
+        return Redirect::intended('admin');
+    }
+    else
+    {
+        return Redirect::route('login')->with('message', 'username or password does not match');
+    }
+});
+
+
 
 
 Route::group(
     array(
+        'before' => 'auth',
         'prefix' => 'admin'
     ), function(){
 
-        Route::get('/', function(){
-            return View::make('admin');
-        });
+        Route::resource('events', 'CalendarEventsController');
+
+        Route::get('/', 'CalendarEventsController@index');
 
         Route::get('/{month}/{year?}', array(
             'as' => 'admin.month',
             function($month, $year = false){
+                $events = CalendarEvent::all();
+
                 $date = new DateTime();
 
                 if(!$year){
@@ -158,17 +191,11 @@ Route::group(
                 }
 
                 return View::make('admin', array(
-                    'date' => $date->setDate($year, $month, 01)
+                    'date'   => $date->setDate($year, $month, 01),
+                    'events' => $events
                 ));
             }
         ));
-
-        Route::post('/', array(
-            'as' => 'admin.event.store',
-            function(){
-                var_dump( Input::all() ); die();
-            }
-        ));
-
+        
     }
 );

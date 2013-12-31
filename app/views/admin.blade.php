@@ -9,7 +9,7 @@
 
     <title>The Source</title>
 
-    <link href="{{ asset('css/site.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -61,7 +61,7 @@
       </div>
     </nav>
 
-    <div class="calendar-wrapper">
+    <div id="calendarWrapper" class="calendar-wrapper">
       
       <div class="calendar">
 
@@ -148,6 +148,17 @@
                 <span class="day">{{ $prev_month->format('D') }}</span>
                 <span class="month">{{ $prev_month->format('M') }}</span>
                 {{ $prev_month->format('j') }}
+
+                <?php
+                $es = $events->filter(function($e) use($prev_month)
+                {
+                  return date('Y-m-d', strtotime($e->starts_at)) === $prev_month->format('Y-m-d');
+                });
+                ?>
+
+                @foreach($es as $e)
+                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{$e->description}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
+                @endforeach
               </div>
             </li>
             <?php
@@ -165,10 +176,21 @@
             ?>
 
             <li class="calendar-day">
-              <div class="date day_cell" data-timestamp="{{ $thisDay->getTimestamp() }}">
+              <div class="date day_cell" data-timestamp="{{ $thisDay->format('U') }}">
                 <span class="day">{{ $thisDay->format('D') }},</span>
                 <span class="month">{{ $thisDay->format('M') }}</span>
                 {{ $day_num }}
+                <?php
+                $es = $events->filter(function($e) use($thisDay)
+                {
+                  return date('Y-m-d', strtotime($e->starts_at)) === $thisDay->format('Y-m-d');
+                });
+                ?>
+
+                @foreach($es as $e)
+                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{$e->description}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
+                @endforeach
+
               </div>
             </li>
             
@@ -187,11 +209,23 @@
                 <span class="day">{{ $next_month->format('D') }}</span>
                 <span class="month">{{ $next_month->format('M') }}</span>
                 {{ $next_month->format('j') }}
+
+                <?php
+                $es = $events->filter(function($e) use($next_month)
+                {
+                  return date('Y-m-d', strtotime($e->starts_at)) === $next_month->format('Y-m-d');
+                });
+                ?>
+
+                @foreach($es as $e)
+                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{$e->description}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
+                @endforeach
+                
               </div>
             </li>
             <?php
             $day_count++;
-            $prev_month->add(new DateInterval('P1D'));
+            $next_month->add(new DateInterval('P1D'));
             ?>
           @endwhile
         </ul>
@@ -211,22 +245,34 @@
 
           <div class="modal-body">
             <form id="newEventForm">
+
+              <input type="hidden" name="id" value="" />
               
               <fieldset>
 
                 <div class="row">
+                  
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Starts At</label>
-                      <input name="starts_at" class="form-control" type="text" />
+                      <label>Date</label>
+                      <input name="starts_at" class="form-control" data-provide="datepicker" data-date-format="mm/dd/yyyy" type="text" required />
                     </div>
                   </div>
+
+                  {{--<div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Starts At</label>
+                      <input name="starts_at" class="form-control" data-provide="datepicker" data-date-format="mm/dd/yyyy" type="text" />
+                    </div>
+                  </div>
+                  
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Ends At</label>
-                      <input name="ends_at" class="form-control" type="text" />
+                      <input name="ends_at" class="form-control" data-provide="datepicker" data-date-format="mm/dd/yyyy" type="text" />
                     </div>
-                  </div>
+                  </div>--}}
+
                 </div>
 
                 <div class="form-group">
@@ -238,7 +284,7 @@
 
                 <div class="form-group">
                   <label>Title</label>
-                  <input name="title" class="form-control" type="text" />
+                  <input name="title" class="form-control" type="text" required />
                 </div>
 
                 <div class="form-group">
@@ -260,37 +306,65 @@
 
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('packages/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('packages/moment/min/moment.min.js') }}"></script>
+    <script src="{{ asset('packages/jquery-validation-1.11.1/dist/jquery.validate.min.js') }}"></script>
     <script>
     $(function(){
 
-      var $modal = $('#eventModal');
+      var
+        $body  = $('body'),
+        $modal = $('#eventModal')
+      ;
 
       $modal.modal({
         show: false
       });
 
-      $('.day_cell').on('click', function(e){
+      $body.on('click', '.day_cell', function(e){
         e.preventDefault();
+
         var 
           data      = $(this).data(),
-          timestamp = data.timestamp
+          timestamp = moment.unix( parseInt(data.timestamp) ).utc().format('L'),
+          target    = $(e.target),
+          isLabel   = target.is('.label')
         ;
 
-        $('[name="starts_at"]').add('[name="ends_at"]').val( timestamp );
+        if(isLabel){
+          var currEvent = target.data();
+          $('[name="id"]').val( currEvent.id );
+          $('[name="title"]').val( currEvent.title );
+          $('[name="description"]').val( currEvent.description );
+          $('[name="starts_at"]').val( moment.unix( parseInt(currEvent.startsAt) ).utc().format('L') );
+          $('[name="ends_at"]').val( moment.unix( parseInt(currEvent.endsAt) ).utc().format('L') );
+          $('[name="location"]').val( currEvent.location );
+          $('[data-event="create"]').text('Update Event');
+        } else {
+          $('[name="starts_at"]').add('[name="ends_at"]')
+            .val( timestamp );
+          $('[name="title"]').add('[name="description"]').add('[name="location"]')
+            .val('');
+          $('[data-event="create"]').text('Add Event');
+        }
 
         $modal.modal('show');
         return false;
       });
 
-      $('[data-event="create"]').on('click', function(e){
+      $body.on('click', '[data-event="create"]', function(e){
         e.preventDefault();
 
         var form = $( $(this).data('target') );
+        form.validate();
 
-        $.post('{{route("admin.event.store")}}',
+        if( !form.valid() ) return false;
+
+        $.post('{{route("admin.events.store")}}',
           form.serialize(), 
           function(data){
-            console.log(data);
+            $('#calendarWrapper').load(window.location.href + " #calendarWrapper > .calendar");
+            $modal.modal('hide');
           }
         );
 

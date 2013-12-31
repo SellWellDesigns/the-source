@@ -71,21 +71,22 @@
       <h1>events</h1>
 
       <div id="events-accordion" class="accordion">
-        
-        <div class="source-accordion">
-          <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c7e">
-            <span class="date">December 31st</span>
-            The Source - 
-            New Years Eve
-            <b class="toggler">+</b>
-          </a>
-          <div id="c7e" class="accordion-content collapse">
-            <h4>The Source</h4>
-            <p>
-              Count down the new year at The Source. With New Year's specials from many of our tenants and a Cocktails and Caviar event hosted at Caprock Farm Bar's central bar, you'll be starting out your 2014 right.
-            </p>
+        <?php $i=0; ?>
+        @foreach($events as $event)          
+          <div class="source-accordion">
+            <a class="accordion-heading" data-toggle="collapse" data-parent="#events-accordion" href="#c{{$i}}e">
+              <span class="date">{{date('F jS', strtotime($event->starts_at))}}</span>
+              {{$event->location}} - 
+              {{$event->title}}
+              <b class="toggler">+</b>
+            </a>
+            <div id="c{{$i}}e" class="accordion-content collapse">
+              <h4>{{$event->location}}</h4>
+              <p>{{$event->description}}</p>
+            </div>
           </div>
-        </div>
+          <?php $i++; ?>
+        @endforeach
 
       </div>
     </div>

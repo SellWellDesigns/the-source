@@ -10,8 +10,8 @@ class CalendarEventsController extends \BaseController {
 	public function index()
 	{
 		$events = CalendarEvent::all();
-
-		return View::make('events.index', compact('events'));
+		// return Response::json($events);
+		return View::make('admin', compact('events'));
 	}
 
 	/**
@@ -23,7 +23,7 @@ class CalendarEventsController extends \BaseController {
 	{
 		$event = new CalendarEvent();
 		
-		return View::make('events.create', compact('event'));
+		return View::make('layouts.subpage')->nest('content', 'events.create', compact('event'));
 	}
 
 	/**
@@ -35,13 +35,15 @@ class CalendarEventsController extends \BaseController {
 	{
 		$data = Input::all();
 
-		$event = new CalendarEvent($data);
+		if($data['id']){
+			$event = CalendarEvent::find($data['id']);
+			unset($data['id']);
+			$event->fill($data);
+			$event->save();
+		} else {
+			$event = CalendarEvent::create($data);
+		}
 
-		$validated = $event->validate();
-
-		if($validated !== true) return Redirect::action('CalendarEventsController@create')->withErrors($validated);
-
-		$event->save();
 		return Redirect::action( 'CalendarEventsController@show', array($event->id) );
 	}
 
@@ -55,7 +57,7 @@ class CalendarEventsController extends \BaseController {
 	{
 		$event = CalendarEvent::find($id);
 
-		return View::make('events.show', compact('event'));
+		return View::make('layouts.subpage')->nest('content', 'events.show', compact('event'));
 	}
 
 	/**
@@ -68,7 +70,7 @@ class CalendarEventsController extends \BaseController {
 	{
 		$event = CalendarEvent::find($id);
 
-		return View::make('events.edit', compact('event'));
+		return View::make('layouts.subpage')->nest('content', 'events.edit', compact('event'));
 	}
 
 	/**

@@ -5,7 +5,6 @@ class CalendarEvent extends Eloquent {
 	protected $table = 'calendar_events';
 
 	protected $fillable = array(
-		'calendar_id',
 		'title',
 		'description',
 		'starts_at',
@@ -14,10 +13,9 @@ class CalendarEvent extends Eloquent {
 	);
 
 	public $rules = array(
-		'calendar_id' => 'required',
-		'title' => 'required',
-		'starts_at' => 'required|date',
-		'ends_at' => 'required|date',
+		'title'       => 'required',
+		'starts_at'   => 'required|date',
+		'ends_at'     => 'required|date',
 	);
 
 	public function calendar()
@@ -43,12 +41,24 @@ class CalendarEvent extends Eloquent {
 
 	public function setStartsAtAttribute($value)
 	{
-		return $this->attributes['starts_at'] = date('Y-m-d H:i:s', strtotime($value));
+		$ts = is_numeric($value)
+			? $value
+			: strtotime($value);
+
+		return $this->attributes['starts_at'] = date('Y-m-d H:i:s', $ts);
 	}
 
 	public function setEndsAtAttribute($value)
 	{
-		return $this->attributes['ends_at'] = date('Y-m-d H:i:s', strtotime($value));
+		$ts = is_numeric($value)
+			? $value
+			: strtotime($value);
+			
+		return $this->attributes['ends_at'] = date('Y-m-d H:i:s', $ts);
+	}
+
+	public function scopeCurrent($query){
+		return $query->where( 'starts_at', '>=', new DateTime('today') );
 	}
 
 }

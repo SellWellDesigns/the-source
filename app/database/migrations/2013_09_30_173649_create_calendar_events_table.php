@@ -23,8 +23,7 @@ class CreateCalendarEventsTable extends Migration {
 
 			$table->timestamp('starts_at');
 			$table->timestamp('ends_at');
-
-			$table->integer('calendar_id')->unsigned();
+			$table->boolean('all_day')->default(false);
 
 			$table->timestamps();
 		});
