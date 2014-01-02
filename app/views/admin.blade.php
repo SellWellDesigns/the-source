@@ -10,6 +10,7 @@
     <title>The Source</title>
 
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+    <link href="{{ asset('packages/redactor919/redactor/redactor.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -157,7 +158,7 @@
                 ?>
 
                 @foreach($es as $e)
-                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{$e->description}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
+                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{{$e->description}}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
                 @endforeach
               </div>
             </li>
@@ -188,7 +189,7 @@
                 ?>
 
                 @foreach($es as $e)
-                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{$e->description}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
+                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{{$e->description}}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
                 @endforeach
 
               </div>
@@ -218,7 +219,7 @@
                 ?>
 
                 @foreach($es as $e)
-                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{$e->description}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
+                  <span class="label label-info" data-id="{{$e->id}}" data-description="{{{$e->description}}}" data-starts-at="{{date('U', strtotime($e->starts_at))}}" data-ends-at="{{date('U', strtotime($e->ends_at))}}" data-location="{{$e->location}}" data-title="{{$e->title}}">{{$e->title}}</span>
                 @endforeach
                 
               </div>
@@ -289,7 +290,7 @@
 
                 <div class="form-group">
                   <label>Description</label>
-                  <textarea name="description" rows="8" class="form-control"></textarea>
+                  <textarea id="editor" name="description" rows="8" class="form-control"></textarea>
                 </div>
 
               </fieldset>
@@ -309,16 +310,38 @@
     <script src="{{ asset('packages/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset('packages/moment/min/moment.min.js') }}"></script>
     <script src="{{ asset('packages/jquery-validation-1.11.1/dist/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('packages/redactor919/redactor/redactor.min.js') }}"></script>
     <script>
     $(function(){
 
       var
-        $body  = $('body'),
-        $modal = $('#eventModal')
+        $body   = $('body'),
+        $modal  = $('#eventModal'),
+        $editor = $('#editor')
       ;
 
       $modal.modal({
         show: false
+      });
+
+      $modal.on('show.bs.modal', function(e){
+        $editor.redactor({
+          iframe: true,
+          css: "{{ asset('css/editor.css') }}",
+          minHeight: 200,
+          focus: true,
+          autoresize: false
+        });
+      });
+
+      $modal.on('hidden.bs.modal', function(e){
+        $editor.redactor('destroy');
+      });
+
+      $(document).on('focusin', function(e){
+        if( $(e.target).is('.redactor_input') ){
+          e.stopImmediatePropagation();
+        }
       });
 
       $body.on('click', '.day_cell', function(e){
@@ -336,6 +359,9 @@
           $('[name="id"]').val( currEvent.id );
           $('[name="title"]').val( currEvent.title );
           $('[name="description"]').val( currEvent.description );
+          
+          // $editor.redactor('set', currEvent.description);
+
           $('[name="starts_at"]').val( moment.unix( parseInt(currEvent.startsAt) ).utc().format('L') );
           $('[name="ends_at"]').val( moment.unix( parseInt(currEvent.endsAt) ).utc().format('L') );
           $('[name="location"]').val( currEvent.location );
@@ -345,6 +371,7 @@
             .val( timestamp );
           $('[name="title"]').add('[name="description"]').add('[name="location"]')
             .val('');
+          // $editor.redactor('set', currEvent.description);
           $('[data-event="create"]').text('Add Event');
         }
 
