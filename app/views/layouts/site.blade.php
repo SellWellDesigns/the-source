@@ -92,15 +92,17 @@
     </footer>
 
     <footer id="footer">
-      <div class="row">
-        
-        @for($i=0; $i<8; $i++)
-          <div class="col-sm-6 col-lg-3">
-            <img class="img-responsive" src="{{ $photos->data[$i]->images->standard_resolution->url }}" />
-          </div>
-        @endfor
-
-      </div>
+      @if( count($photos->data) > 0 )
+        <div class="row">
+          @for($i=0; $i<8; $i++)
+            @if( isset($photos->data[$i]) )
+              <div class="col-sm-6 col-lg-3">
+                <img class="img-responsive" src="{{ $photos->data[$i]->images->standard_resolution->url }}" />
+              </div>
+            @endif
+          @endfor
+        </div>
+      @endif
     </footer>
 
     <a href="http://www.cssdesignawards.com/sites/the-source-denver/24043" id="cssda-award" target="_blank"></a>
