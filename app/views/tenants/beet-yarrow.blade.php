@@ -5,7 +5,7 @@
     
     <div class="well tenant-content">
       
-      <p>Beet & Yarrow is a floral shop dedicated to the sustainable sourcing of floral products—using seasonal materials, ethically and environmentally grown and farmed flowers, and foraging— without sacrificing design.</p>
+      <p>Beet & Yarrow is a floral shop specializing in distinguished seasonal and specialty products. Ready-made or personalized, designs may be picked up in store or delivered to homes, business and special events.</p>
 
       <p>
         <a class="btn btn-lg" href="http://www.beetandyarrow.com/" title="http://www.beetandyarrow.com/">
