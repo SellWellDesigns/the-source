@@ -41,7 +41,7 @@
           <h3>hours</h3>
 
           <p class="lead">
-            Monday - Friday 8:00am - 11:00pm<br />
+            Monday - Friday 9:00am - 11:00pm<br />
             Saturday - Sunday 9:00am - 11:00pm
           </p>
 
