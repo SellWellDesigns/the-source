@@ -27,7 +27,8 @@ View::composer('layouts.site', function($view){
     $photos = Cache::remember('photos', 30, function(){
         // $photos = file_get_contents('https://api.instagram.com/v1/tags/thesourcedenver/media/recent?client_id=f8968ab4a82445b5b01e990c20d3fa53');
         $token = '528297183.f8968ab.b2b945086da84579aef467effbcab3c8';
-        $photos = file_get_contents('https://api.instagram.com/v1/users/self/feed?access_token=' . $token . '&count=8');
+        // $photos = file_get_contents('https://api.instagram.com/v1/users/self/feed?access_token=' . $token . '&count=8');
+        $photos = file_get_contents('https://api.instagram.com/v1/users/self/media/recent?access_token=' . $token . '&count=8');
         return json_decode($photos);
     });
 
