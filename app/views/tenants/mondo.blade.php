@@ -11,7 +11,7 @@
         <a class="btn btn-lg" href="http://www.mondofood.com" title="http://www.mondofood.com">
           <i class="icon-globe"></i>
         </a>
-        <a class="btn btn-lg" href="https://www.facebook.com/pages/MondoFoodcom">
+        <a class="btn btn-lg" href="https://www.facebook.com/pages/MondoFoodcom/154467441188">
           <i class="icon-facebook"></i>
         </a>
       </p>
