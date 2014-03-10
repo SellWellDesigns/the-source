@@ -17,7 +17,21 @@
         <a class="btn btn-lg" href="https://twitter.com/eatcomida">
           <i class="icon-twitter"></i>
         </a>
-      </p> 
+      </p>
+
+      <h4>Hours:</h4>
+      <table>
+        <tr>
+          <td>11am-10pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Mon-Sat</strong></td>
+        </tr>
+        <tr>
+          <td>9am-3pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Sun</strong></td>
+        </tr>
+      </table>
       
     </div>
   </div>

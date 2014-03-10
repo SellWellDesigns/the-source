@@ -19,6 +19,20 @@
         </a>
       </p>
 
+      <h4>Hours:</h4>
+      <table>
+        <tr>
+          <td>11am-8pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Mon-Sat</strong></td>
+        </tr>
+        <tr>
+          <td>11am-5pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Sun</strong></td>
+        </tr>
+      </table>
+
     </div>
   </div>
   <div class="col-sm-6">

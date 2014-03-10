@@ -12,6 +12,20 @@
           <i class="icon-facebook"></i>
         </a>
       </p> 
+
+      <h4>Hours:</h4>
+      <table>
+        <tr>
+          <td>10am-7pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Tue-Sat</strong></td>
+        </tr>
+        <tr>
+          <td>10am-5pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Sun-Mon</strong></td>
+        </tr>
+      </table>
       
     </div>
   </div>

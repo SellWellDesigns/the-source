@@ -11,6 +11,20 @@
           <i class="icon-globe"></i>
         </a>
       </p> 
+
+      <h4>Hours:</h4>
+      <table>
+        <tr>
+          <td>8:30am-5pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Mon-Fri</strong></td>
+        </tr>
+        <tr>
+          <td>closed</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Sat & Sun</strong></td>
+        </tr>
+      </table>
       
     </div>
   </div>

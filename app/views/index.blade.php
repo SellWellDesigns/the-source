@@ -109,9 +109,9 @@
       <h1>
         <a href="{{ route('tenant.boxcar') }}">boxcar coffee roasters</a>
       </h1>
-      <h1>
+      <!-- <h1>
         <a href="{{ route('tenant.caprock') }}">caprock farm bar</a>
-      </h1>
+      </h1> -->
       <h1>
         <a href="{{ route('tenant.collegiate-peaks-bank') }}">collegiate peaks bank</a>
       </h1>

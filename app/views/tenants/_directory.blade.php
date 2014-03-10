@@ -15,9 +15,9 @@
         <li{{ Request::is(str_replace('/','',route('tenant.boxcar', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.boxcar') }}">boxcar coffee roasters</a>
         </li>
-        <li{{ Request::is(str_replace('/','',route('tenant.caprock', array(), false))) ? ' class="active"' : '' }}>
+        <!-- <li{{ Request::is(str_replace('/','',route('tenant.caprock', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.caprock') }}">caprock farm bar</a>
-        </li>
+        </li> -->
         <li{{ Request::is(str_replace('/','',route('tenant.collegiate-peaks-bank', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.collegiate-peaks-bank') }}">collegiate peaks bank</a>
         </li>

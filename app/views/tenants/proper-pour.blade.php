@@ -16,6 +16,30 @@
         </a>
       </p>
 
+      <h4>Hours:</h4>
+      <table>
+        <tr>
+          <td>11:30am-8pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Mon</strong></td>
+        </tr>
+        <tr>
+          <td>10am-8pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Tue-Thur</strong></td>
+        </tr>
+        <tr>
+          <td>10am-10pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Fri-Sat</strong></td>
+        </tr>
+        <tr>
+          <td>10am-8pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Sun</strong></td>
+        </tr>
+      </table>
+
     </div>
   </div>
   <div class="col-sm-6">
