@@ -53,7 +53,7 @@
           <p class="lead">(720) 443-1135</p>
 
           <p>
-            <a class="btn btn-info btn-lg" href="mailto:info@thesourcedenver.com">
+            <a class="btn btn-info btn-lg" href="mailto:justin@thesourcedenver.com">
               Contact
             </a>
           </p>
