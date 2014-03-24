@@ -15,7 +15,10 @@ Route::get('/', array(
     'as' => 'home',
     function()
     {
-        $events = CalendarEvent::current()->limit(7)->get();
+        $events = CalendarEvent::current()
+            ->limit(7)
+            ->orderBy('starts_at', 'desc')
+            ->get();
         return View::make('index', compact('photos', 'events'));
     }
 ));
