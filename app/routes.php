@@ -17,7 +17,7 @@ Route::get('/', array(
     {
         $events = CalendarEvent::current()
             ->limit(7)
-            ->orderBy('starts_at', 'desc')
+            ->orderBy('starts_at', 'asc')
             ->get();
         return View::make('index', compact('photos', 'events'));
     }
