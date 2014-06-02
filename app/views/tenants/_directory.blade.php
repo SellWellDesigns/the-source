@@ -43,7 +43,7 @@
           <a href="{{ route('tenant.svperordinary') }}">svper ordinary</a>
         </li>
         <li{{ Request::is(str_replace('/','',route('tenant.wunder-werks', array(), false))) ? ' class="active"' : '' }}>
-          <a href="{{ route('tenant.wunder-werks') }}">wunder works</a>
+          <a href="{{ route('tenant.wunder-werks') }}">wunder werks</a>
         </li>
     </ul>
 </div>
