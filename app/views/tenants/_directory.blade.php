@@ -15,9 +15,6 @@
         <li{{ Request::is(str_replace('/','',route('tenant.boxcar', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.boxcar') }}">boxcar coffee roasters</a>
         </li>
-        <!-- <li{{ Request::is(str_replace('/','',route('tenant.caprock', array(), false))) ? ' class="active"' : '' }}>
-          <a href="{{ route('tenant.caprock') }}">caprock farm bar</a>
-        </li> -->
         <li{{ Request::is(str_replace('/','',route('tenant.collegiate-peaks-bank', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.collegiate-peaks-bank') }}">collegiate peaks bank</a>
         </li>
@@ -27,17 +24,26 @@
         <li{{ Request::is(str_replace('/','',route('tenant.crooked-stave', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.crooked-stave') }}">crooked stave</a>
         </li>
-        <li{{ Request::is(str_replace('/','',route('tenant.meathead', array(), false))) ? ' class="active"' : '' }}>
-          <a href="{{ route('tenant.meathead') }}">meathead</a>
+        <li{{ Request::is(str_replace('/','',route('tenant.heroes', array(), false))) ? ' class="active"' : '' }}>
+          <a href="{{ route('tenant.heroes') }}">heroes like us</a>
+        </li>
+        <li{{ Request::is(str_replace('/','',route('tenant.jennifer-olson', array(), false))) ? ' class="active"' : '' }}>
+          <a href="{{ route('tenant.jennifer-olson') }}">jennifer olson photography</a>
         </li>
         <li{{ Request::is(str_replace('/','',route('tenant.mondo-market', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.mondo-market') }}">mondo market</a>
+        </li>
+        <li{{ Request::is(str_replace('/','',route('tenant.slow-food', array(), false))) ? ' class="active"' : '' }}>
+          <a href="{{ route('tenant.slow-food') }}">slow food denver</a>
         </li>
         <li{{ Request::is(str_replace('/','',route('tenant.proper-pour', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.proper-pour') }}">proper pour</a>
         </li>
         <li{{ Request::is(str_replace('/','',route('tenant.svperordinary', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.svperordinary') }}">svper ordinary</a>
+        </li>
+        <li{{ Request::is(str_replace('/','',route('tenant.wunder-werks', array(), false))) ? ' class="active"' : '' }}>
+          <a href="{{ route('tenant.wunder-werks') }}">wunder works</a>
         </li>
     </ul>
 </div>

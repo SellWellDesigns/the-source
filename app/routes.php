@@ -70,12 +70,6 @@ Route::get('boxcar', array(
         return View::make('layouts.subpage')->nest('content', 'tenants.boxcar');
     }
 ));
-Route::get('caprock', array(
-    'as' => 'tenant.caprock',
-    function(){
-        return View::make('layouts.subpage')->nest('content', 'tenants.caprock');
-    }
-));
 Route::get('collegiate-peaks', array(
     'as' => 'tenant.collegiate-peaks-bank',
     function(){
@@ -94,16 +88,28 @@ Route::get('crooked-stave', array(
         return View::make('layouts.subpage')->nest('content', 'tenants.crooked-stave');
     }
 ));
-Route::get('meathead', array(
-    'as' => 'tenant.meathead',
+Route::get('heroes-like-us', array(
+    'as' => 'tenant.heroes',
     function(){
-        return View::make('layouts.subpage')->nest('content', 'tenants.meathead');
+        return View::make('layouts.subpage')->nest('content', 'tenants.heroes');
+    }
+));
+Route::get('jennifer-olson-photography', array(
+    'as' => 'tenant.jennifer-olson',
+    function(){
+        return View::make('layouts.subpage')->nest('content', 'tenants.jennifer-olson');
     }
 ));
 Route::get('mondo', array(
     'as' => 'tenant.mondo-market',
     function(){
         return View::make('layouts.subpage')->nest('content', 'tenants.mondo');
+    }
+));
+Route::get('slow-food-denver', array(
+    'as' => 'tenant.slow-food',
+    function(){
+        return View::make('layouts.subpage')->nest('content', 'tenants.slow-food');
     }
 ));
 Route::get('proper-pour', array(
@@ -116,6 +122,12 @@ Route::get('svper-ordinary', array(
     'as' => 'tenant.svperordinary',
     function(){
         return View::make('layouts.subpage')->nest('content', 'tenants.svper-ordinary');
+    }
+));
+Route::get('wunder-werks', array(
+    'as' => 'tenant.wunder-werks',
+    function(){
+        return View::make('layouts.subpage')->nest('content', 'tenants.wunder-werks');
     }
 ));
 

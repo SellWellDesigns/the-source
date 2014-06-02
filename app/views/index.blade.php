@@ -57,6 +57,11 @@
               Contact
             </a>
           </p>
+          <p>
+            <a class="btn btn-info btn-lg" href="mailto:marielle@zeppelinplaces.com">
+              Events
+            </a>
+          </p>
 
         </div>
         <div class="col-sm-6 hidden-xs">
@@ -109,9 +114,6 @@
       <h1>
         <a href="{{ route('tenant.boxcar') }}">boxcar coffee roasters</a>
       </h1>
-      <!-- <h1>
-        <a href="{{ route('tenant.caprock') }}">caprock farm bar</a>
-      </h1> -->
       <h1>
         <a href="{{ route('tenant.collegiate-peaks-bank') }}">collegiate peaks bank</a>
       </h1>
@@ -122,16 +124,25 @@
         <a href="{{ route('tenant.crooked-stave') }}">crooked stave</a>
       </h1>
       <h1>
-        <a href="{{ route('tenant.meathead') }}">meathead</a>
+        <a href="{{ route('tenant.heroes') }}">heroes like us</a>
+      </h1>
+      <h1>
+        <a href="{{ route('tenant.jennifer-olson') }}">jennifer olson photography</a>
       </h1>
       <h1>
         <a href="{{ route('tenant.mondo-market') }}">mondo market</a>
+      </h1>
+      <h1>
+        <a href="{{ route('tenant.slow-food') }}">slow food denver</a>
       </h1>
       <h1>
         <a href="{{ route('tenant.proper-pour') }}">the proper pour</a>
       </h1>
       <h1>
         <a href="{{ route('tenant.svperordinary') }}">svper ordinary</a>
+      </h1>
+      <h1>
+        <a href="{{ route('tenant.wunder-werks') }}">wunder werks</a>
       </h1>
     </div>{{--/container--}}
 
