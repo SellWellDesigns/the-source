@@ -7756,6 +7756,9 @@ h1 {
   .tenant-sub-page .tenant-directory {
     float: none;
   }
+  .tenant-sub-page .well {
+    background-color: #c9cac2;
+  }
   .source-accordion .accordion-heading {
     padding: 20px 40px 20px 20px;
   }
@@ -7767,19 +7770,31 @@ h1 {
   #contact {
     text-align: center;
   }
+  .tenant-sub-page .well {
+    background-color: #c9cac2;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #logo {
     background-size: 560.66666667px 199.33333333px;
+  }
+  .tenant-sub-page .well {
+    background-color: #c9cac2;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #logo {
     background-size: 841px 299px;
   }
+  .tenant-sub-page .well:hover {
+    background-color: rgba(201, 202, 194, 0.9);
+  }
 }
 @media (min-width: 1200px) {
   #logo {
     background-size: 841px 299px;
+  }
+  .tenant-sub-page .well:hover {
+    background-color: rgba(201, 202, 194, 0.9);
   }
 }
