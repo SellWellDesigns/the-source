@@ -7606,6 +7606,10 @@ h1 {
   color: #c9cac2;
 }
 .tenant-sub-page .well {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border: 10px solid #83e5ee;
   background-color: rgba(201, 202, 194, 0.6);
 }
