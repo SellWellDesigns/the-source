@@ -3,9 +3,6 @@
         <li{{ Request::is(str_replace('/','',route('tenant.acorn', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.acorn') }}">acorn</a>
         </li>
-        <li{{ Request::is(str_replace('/','',route('tenant.american-provisions', array(), false))) ? ' class="active"' : '' }}>
-          <a href="{{ route('tenant.american-provisions') }}">americanum provisions</a>
-        </li>
         <li{{ Request::is(str_replace('/','',route('tenant.babettes', array(), false))) ? ' class="active"' : '' }}>
           <a href="{{ route('tenant.babettes') }}">babettes</a>
         </li>

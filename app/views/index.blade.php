@@ -103,9 +103,6 @@
         <a href="{{ route('tenant.acorn') }}">acorn</a>
       </h1>
       <h1>
-        <a href="{{ route('tenant.american-provisions') }}">americanum provisions</a>
-      </h1>
-      <h1>
         <a href="{{ route('tenant.babettes') }}">babettes</a>
       </h1>
       <h1>
