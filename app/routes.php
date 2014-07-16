@@ -46,12 +46,6 @@ Route::get('acorn', array(
         return View::make('layouts.subpage')->nest('content', 'tenants.acorn');
     }
 ));
-Route::get('americanum-provisions', array(
-    'as' => 'tenant.american-provisions',
-    function(){
-        return View::make('layouts.subpage')->nest('content', 'tenants.americanum-provisions');
-    }
-));
 Route::get('babettes', array(
     'as' => 'tenant.babettes',
     function(){
