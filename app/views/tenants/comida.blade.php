@@ -29,7 +29,12 @@
         <tr>
           <td>9am-3pm</td>
           <td>&nbsp;&nbsp;</td>
-          <td><strong>Sun</strong></td>
+          <td><strong>Sunday Brunch</strong></td>
+        </tr>
+        <tr>
+          <td>5pm-9pm</td>
+          <td>&nbsp;&nbsp;</td>
+          <td><strong>Sunday Dinner</strong></td>
         </tr>
       </table>
       
