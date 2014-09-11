@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-md-offset-4 col-md-8">
           <p class="text-justify">
-            Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; CapRock Farm Bar, a crafted cocktail and juice bar; and Babettes Artisan Breads, a traditional French bakery. In the Commissary Space of the building are Meathead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include SVPER ORDINARY, a design store and exhibit space; The Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
+            Among The Source’s 15 tenants are Acorn, a wood-fired restaurant and cocktail bar owned by the team behind Oak at Fourteenth; Comida, a modern Mexican taqueria; and Babettes Artisan Breads, a traditional French bakery. In the Commissary Space of the building are Meathead, a butcher; Americanum Provisions, a specialty produce market; and floral shop Beet & Yarrow. Tenants also include SVPER ORDINARY, a design store and exhibit space; The Proper Pour, an independent wine and spirits bottle shop, and Crooked Stave Artisan Beer Project, a cultish brewery specializing in funky and sour beers. Also setting up shop at The Source are Boulder-based Boxcar Coffee Roasters and Mondo Market, a cheese, spice, and specialty food store.
           </p>
           <p class="text-justify">
             The Source offers a one-stop shopping experience for the food-obsessed while also providing some of Denver’s best artisans with an outlet for their crafts. The openness of the building speaks to its community-oriented philosophy. It was repurposed under the guidance of architect Stephen Dynia with a strong commitment to preserving its industrial identity while adapting it for its current use. The industrial design with clear layers of new materials complementing the original shell conveys the integrity and edginess both of the tenants themselves and of this new marketplace. 
@@ -255,7 +255,7 @@
           </a>
           <div id="c9f" class="accordion-content collapse">
             <p>
-              Yes. Both restaurants, Acorn and Comida, as well as the CapRock Farm Bar and the brewery, Crooked Stave, are open to hosting private events. Because each is an independent business, the best way to go about hosting an event there is to contact them directly and discuss your vision for the event.
+              Yes. Both restaurants, Acorn and Comida, as well as the brewery, Crooked Stave, are open to hosting private events. Because each is an independent business, the best way to go about hosting an event there is to contact them directly and discuss your vision for the event.
             </p>
           </div>
         </div>
