@@ -7426,6 +7426,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body.anniversary {
+  background-image: url('../img/anniversary-bg.jpg');
+}
+body.anniversary #logo {
+  background-image: url('../img/anniversary-logo.png');
+  background-position: center 453px;
+  background-size: 264.4px 181.2px;
+}
 h1 {
   font-size: 100px;
 }
@@ -7471,15 +7479,12 @@ h1 {
   position: relative;
   height: 930px;
 }
-#header.anniversary #logo {
-  background-image: url('../img/logo-lg.png');
-}
 #logo {
   background-image: url('../img/logo-lg.png');
   background-position: center 299px;
+  background-size: 336.4px 119.6px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 336.4px 119.6px;
   width: 100%;
   height: 100%;
 }
