@@ -7426,70 +7426,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#cssda-award {
-  display: block;
-  position: fixed;
-  top: 215px;
-  right: 0;
-  background: url('../img/nominee-white-grey-cssda-right.png');
-  width: 66px;
-  height: 117px;
-}
-/* --- Awwwards Ribbons --- */
-/* Base */
-#awwwards {
-  position: fixed;
-  top: 105px;
-  z-index: 9999;
-}
-/* Right */
-#awwwards.right {
-  right: 0;
-}
-/* Link */
-#awwwards a {
-  display: block;
-  width: 70px;
-  height: 105px;
-  text-indent: -8000px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  overflow: hidden;
-}
-/* White */
-#awwwards.left.white a {
-  background-image: url('../img/awwwards_nominee_white_left.png');
-}
-#awwwards.right.white a {
-  background-image: url('../img/awwwards_nominee_white_right.png');
-}
-/* MEDIA QUERIES */
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  /* hidden */
-  #awwwards,
-  #cssda-award {
-    display: none;
-  }
-}
-/* Retina Displays */
-/* Target any device with retina display (ie iPad 3 and MacBook Pro) */
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-  #awwwards a {
-    -moz-background-size: 70px 105px;
-    -ie-background-size: 70px 105px;
-    -o-background-size: 70px 105px;
-    -webkit-background-size: 70px 105px;
-    background-size: 70px 105px;
-  }
-  /* White */
-  #awwwards.left.white a {
-    background-image: url('../img/awwwards_nominee_white_left2x.png');
-  }
-  #awwwards.right.white a {
-    background-image: url('../img/awwwards_nominee_white_right2x.png');
-  }
-}
 h1 {
   font-size: 100px;
 }
@@ -7534,6 +7470,9 @@ h1 {
 #header {
   position: relative;
   height: 930px;
+}
+#header.anniversary #logo {
+  background-image: url('../img/logo-lg.png');
 }
 #logo {
   background-image: url('../img/logo-lg.png');

@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('header')
-  <header id="header" class="text-center">
+  <header id="header" class="text-center anniversary">
     <div id="logo" title="The Source"></div>
   </header>
 @stop

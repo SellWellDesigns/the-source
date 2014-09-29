@@ -105,10 +105,10 @@
       @endif
     </footer>
 
-    <a href="http://www.cssdesignawards.com/sites/the-source-denver/24043" id="cssda-award" target="_blank"></a>
+    <!-- <a href="http://www.cssdesignawards.com/sites/the-source-denver/24043" id="cssda-award" target="_blank"></a>
     <div id="awwwards" class="right white">
       <a href="http://www.awwwards.com/best-websites/the-source-denver?subsection=all" target="_blank">best websites of the world</a>
-    </div>
+    </div> -->
 
     <script>
       document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');
