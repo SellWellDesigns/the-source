@@ -1,7 +1,7 @@
 <div id="tenant-jennifer-olson" class="row tenant-sub-page">
   <div class="col-sm-6">
     
-    <h1>jennifer olson photography</h1>
+    <h1>Jennifer Olson Photography</h1>
         
     <div class="tenant-content well">
       <p>A 110 Kodak Instamatic camera given to me by my Mother when I was eight years old was all it took to get me hooked.  We moved around a lot when I was a kid, so the camera was my way to document and remember the people I met and places that we had been.  When I pursued an education at Evergreen State College, I found myself gravitating towards photography even more, and paying the bills by working in the restaurant business.   From there, I carved out a nice little career in the restaurant business, working all aspects of the front of the house at some of the best restaurants in Denver.  Take 13 years in the restaurant business, and a degree in Photography, and what you get is a foodie who loves to photograph food.</p>
