@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon-precomposed" href="{{ asset('icns/Source_favicon_57.png') }}">
     <link rel="shortcut icon" href="{{ asset('icns/Source_favicon_32.png') }}">
   </head>
-  <body data-spy="scroll" data-target="#nav" data-offset="200" class='anniversary'>
+  <body data-spy="scroll" data-target="#nav" data-offset="200">
 
     @yield('header')
 
